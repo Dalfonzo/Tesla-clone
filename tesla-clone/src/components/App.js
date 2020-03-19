@@ -1,7 +1,13 @@
 import React from 'react';
+import Header from './header/Header';
 
 const App = () => {
-  return <div>Jelou</div>;
+  return (
+    <div>
+      <Header />
+      
+    </div>
+  );
 };
 
 export default App;
