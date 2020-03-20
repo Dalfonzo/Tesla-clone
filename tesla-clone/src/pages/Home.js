@@ -5,6 +5,7 @@ import HeroButtons from '../components/hero-buttons/HeroButtons';
 import ArrowDown from '../components/down-arrow/ArrowDown';
 import mainHeroImg from '../assets/images/main-hero-homepage-desktop.jpg';
 import energyHeroImg from '../assets/images/homepage-energy-hero-desktop.jpg';
+import modelYHeroImg from '../assets/images/tesla-model-1855169.jpg';
 import videoHero from '../assets/video/accessories-hero-desktop.mp4';
 import SecondaryHeroButtons from '../components/secondary-hero-buttons/SecondaryHeroButtons';
 
@@ -53,11 +54,25 @@ const Home = () => {
           autoPlay
         />
         <SecondaryHeroButtons title="Accesories" option="SHOP NOW" />
-
         <ArrowDown />
       </div>
-      <div></div>
-      <div></div>
+      <div className={classes.modelYHero}>
+        <div className={classes.imgContainer}>
+          <img src={modelYHeroImg} alt="Hero" />
+        </div>
+        <SecondaryHeroButtons title="Model Y" option="ORDER NOW" />
+        <div className={classes.linksWrapper}>
+          <ul className={classes.links}>
+            <li>Tesla 2020</li>
+            <li>Privacy & legal</li>
+            <li>contact</li>
+            <li>careers</li>
+            <li>get newsletter</li>
+            <li>forums</li>
+            <li>locations</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };

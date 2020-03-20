@@ -1,11 +1,12 @@
 :root {
-  /* para las variables y cosas que se necesiten globalmente */
+  /* Colores */
   --primary-color: #fff;
   --hover-color: #bec2c7;
-  --normal-font-size: 1.2rem;
-  --small-font-size: 1rem;
-  --medium-font-size: 2rem;
-  --big-font-size: 3.5rem;
+  /* Tamaños de fuente */
+  --small-font-size: 1.2rem;
+  --normal-font-size: 1.5rem;
+  --medium-font-size: 3rem;
+  --big-font-size: 4.5rem;
 }
 
 * {

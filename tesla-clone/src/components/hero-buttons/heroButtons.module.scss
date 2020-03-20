@@ -44,6 +44,7 @@
   .link {
     text-decoration: underline;
     padding: 0.2rem;
+    font-size: var(--small-font-size);
     &:hover {
       cursor: pointer;
     }
