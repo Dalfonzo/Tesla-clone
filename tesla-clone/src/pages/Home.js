@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import heroImg from '../assets/images/main-hero-homepage-desktop.jpg';
 import HeroControls from '../components/main-hero-controls/HeroControls';
 import HeroButtons from '../components/hero-buttons/HeroButtons';
+import ArrowDown from '../components/down-arrow/ArrowDown';
 
 import classes from './home.module.scss';
 
@@ -20,6 +21,7 @@ const Home = () => {
         <img src={heroImg} alt="Hero" style={position} />
         <HeroControls heroProps={setHeroProps} />
         <HeroButtons title={heroProps.title} />
+        <ArrowDown />
       </div>
       <div></div>
       <div></div>
