@@ -7,17 +7,19 @@ import classes from './home.module.scss';
 
 const Home = () => {
   // 100% mueve el hero hacia la izquierda, 0% hacia la derecha
-  const [heroPosition, setHeroPosition] = useState('50%');
-  const [title, setTitle] = useState('Model 3');
+  const [heroProps, setHeroProps] = useState({
+    heroPosition: '50%',
+    title: 'Model 3'
+  });
 
-  const position = { left: `${heroPosition}` };
+  const position = { left: `${heroProps.heroPosition}` };
 
   return (
     <div>
       <div className={classes.main}>
         <img src={heroImg} alt="Hero" style={position} />
-        <HeroControls position={setHeroPosition} title={setTitle} />
-        <HeroButtons title={title} />
+        <HeroControls heroProps={setHeroProps} />
+        <HeroButtons title={heroProps.title} />
       </div>
       <div></div>
       <div></div>

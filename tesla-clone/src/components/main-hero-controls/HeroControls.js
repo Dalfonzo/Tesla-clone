@@ -1,14 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import classes from './heroControls.module.scss';
 
-const HeroControls = ({ position, title }) => {
+const HeroControls = ({ heroProps }) => {
   const [active, setActive] = useState(2);
 
   const clickHandler = (index, value, name) => {
-    position(value);
     setActive(index);
-    title(name);
+    heroProps({
+      heroPosition: value,
+      title: name
+    });
   };
 
   const leftBg =

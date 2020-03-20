@@ -10,5 +10,6 @@
     z-index: 0;
     top: 35%;
     transform: translate(-50%, -50%);
+    transition: left .5s ease-out;
   }
 }
