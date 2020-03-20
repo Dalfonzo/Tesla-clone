@@ -5,6 +5,8 @@ import HeroButtons from '../components/hero-buttons/HeroButtons';
 import ArrowDown from '../components/down-arrow/ArrowDown';
 import mainHeroImg from '../assets/images/main-hero-homepage-desktop.jpg';
 import energyHeroImg from '../assets/images/homepage-energy-hero-desktop.jpg';
+import videoHero from '../assets/video/accessories-hero-desktop.mp4';
+import SecondaryHeroButtons from '../components/secondary-hero-buttons/SecondaryHeroButtons';
 
 import classes from './home.module.scss';
 
@@ -40,6 +42,18 @@ const Home = () => {
           subtitle="Solar and Powerwall"
           link="Learn More"
         />
+        <ArrowDown />
+      </div>
+      <div className={classes.videoHeroContainer}>
+        <video
+          muted
+          loop
+          src={videoHero}
+          className={classes.videoPlayer}
+          autoPlay
+        />
+        <SecondaryHeroButtons title="Accesories" option="SHOP NOW" />
+
         <ArrowDown />
       </div>
       <div></div>
