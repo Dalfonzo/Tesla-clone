@@ -35,8 +35,13 @@
     font-size: var(--big-font-size);
     padding-bottom: 2rem;
   }
+  .subtitle {
+    font-size: var(--normal-font-size);
+    // padding-bottom: 2rem;
+    margin-top: -1.5rem;
+  }
 
-  .subTitle {
+  .link {
     text-decoration: underline;
     padding: 0.2rem;
     &:hover {

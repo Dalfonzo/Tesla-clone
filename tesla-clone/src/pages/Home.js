@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import heroImg from '../assets/images/main-hero-homepage-desktop.jpg';
+
 import HeroControls from '../components/main-hero-controls/HeroControls';
 import HeroButtons from '../components/hero-buttons/HeroButtons';
 import ArrowDown from '../components/down-arrow/ArrowDown';
+import mainHeroImg from '../assets/images/main-hero-homepage-desktop.jpg';
+import energyHeroImg from '../assets/images/homepage-energy-hero-desktop.jpg';
 
 import classes from './home.module.scss';
 
@@ -17,13 +19,29 @@ const Home = () => {
 
   return (
     <div>
-      <div className={classes.main}>
-        <img src={heroImg} alt="Hero" style={position} />
+      <div className={classes.mainHero}>
+        <img src={mainHeroImg} alt="Hero" style={position} />
         <HeroControls heroProps={setHeroProps} />
-        <HeroButtons title={heroProps.title} />
+        <HeroButtons
+          firstOpt="CUSTOM ORDER"
+          secondOpt="EXISTING INVENTORY"
+          title={heroProps.title}
+          subtitle={null}
+          link="Visit a Store"
+        />
         <ArrowDown />
       </div>
-      <div></div>
+      <div className={classes.energyHero}>
+        <img src={energyHeroImg} alt="Hero" />
+        <HeroButtons
+          firstOpt="ORDER SOLAR PANELS"
+          secondOpt="ORDER SOLAR ROOF"
+          title="Power Everything"
+          subtitle="Solar and Powerwall"
+          link="Learn More"
+        />
+        <ArrowDown />
+      </div>
       <div></div>
       <div></div>
     </div>
