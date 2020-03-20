@@ -1,7 +1,6 @@
 .main {
   height: 100vh;
   width: 100vw;
-  border: 1px solid red;
   position: relative;
   overflow: hidden;
 
@@ -9,7 +8,7 @@
     height: 320vh;
     position: absolute;
     z-index: 0;
-    top: 30%;
+    top: 35%;
     transform: translate(-50%, -50%);
   }
 }

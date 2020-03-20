@@ -2,7 +2,9 @@
   /* para las variables y cosas que se necesiten globalmente */
   --primary-color: #fff;
   --hover-color: #bec2c7;
-  --normal-font-size: 1.3rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: 1rem;
+  --big-font-size: 3rem;
 }
 
 * {

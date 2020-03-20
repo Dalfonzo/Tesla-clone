@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 
 import classes from './heroControls.module.scss';
 
-const HeroControls = ({ position }) => {
+const HeroControls = ({ position, title }) => {
   const [active, setActive] = useState(2);
 
-  const clickHandler = (index, value) => {
+  const clickHandler = (index, value, name) => {
     position(value);
     setActive(index);
+    title(name);
   };
 
   const leftBg =
@@ -30,17 +31,17 @@ const HeroControls = ({ position }) => {
       <div
         className={classes.left}
         style={leftBg}
-        onClick={() => clickHandler(1, '100%')}
+        onClick={() => clickHandler(1, '100%', 'Model S')}
       />
       <div
         className={classes.mid}
         style={midBg}
-        onClick={() => clickHandler(2, '50%')}
+        onClick={() => clickHandler(2, '50%', 'Model 3')}
       />
       <div
         className={classes.right}
         style={rightBg}
-        onClick={() => clickHandler(3, '0%')}
+        onClick={() => clickHandler(3, '0%', 'Model X')}
       />
     </div>
   );

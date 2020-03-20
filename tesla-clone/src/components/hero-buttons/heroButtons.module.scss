@@ -1,0 +1,46 @@
+@mixin bg-btn {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  & > * {
+    color: var(--primary-color);
+  }
+
+  & > button {
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.7rem 2.5rem;
+    width: 23rem;
+    margin: 1rem;
+    background-color: transparent;
+    font-size: var(--small-font-size);
+
+    &:hover {
+      cursor: pointer;
+      @include bg-btn;
+    }
+  }
+  button:first-of-type {
+    @include bg-btn;
+  }
+
+  .title {
+    font-size: var(--big-font-size);
+    padding-bottom: 2rem;
+  }
+
+  .subTitle {
+    text-decoration: underline;
+    padding: 0.2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
