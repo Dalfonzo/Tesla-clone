@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 import HeroControls from '../components/main-hero-controls/HeroControls';
 import HeroButtons from '../components/hero-buttons/HeroButtons';
+import SecondaryHeroButtons from '../components/secondary-hero-buttons/SecondaryHeroButtons';
 import ArrowDown from '../components/down-arrow/ArrowDown';
 import mainHeroImg from '../assets/images/main-hero-homepage-desktop.jpg';
 import energyHeroImg from '../assets/images/homepage-energy-hero-desktop.jpg';
 import modelYHeroImg from '../assets/images/tesla-model-1855169.jpg';
 import videoHero from '../assets/video/accessories-hero-desktop.mp4';
-import SecondaryHeroButtons from '../components/secondary-hero-buttons/SecondaryHeroButtons';
 
 import classes from './home.module.scss';
 
@@ -19,6 +19,11 @@ const Home = () => {
   });
 
   const position = { left: `${heroProps.heroPosition}` };
+
+  const clickHandler = id => {
+    let elmnt = document.getElementById(id);
+    elmnt.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div>
@@ -32,9 +37,9 @@ const Home = () => {
           subtitle={null}
           link="Visit a Store"
         />
-        <ArrowDown />
+        <ArrowDown arrowClick={() => document.querySelector('.Navigation')} />
       </div>
-      <div className={classes.energyHero}>
+      <div className={classes.energyHero} id="1">
         <img src={energyHeroImg} alt="Hero" />
         <HeroButtons
           firstOpt="ORDER SOLAR PANELS"
@@ -43,9 +48,9 @@ const Home = () => {
           subtitle="Solar and Powerwall"
           link="Learn More"
         />
-        <ArrowDown />
+        <ArrowDown arrowClick={() => clickHandler('2')} />
       </div>
-      <div className={classes.videoHeroContainer}>
+      <div className={classes.videoHeroContainer} id="2">
         <video
           muted
           loop
@@ -54,14 +59,15 @@ const Home = () => {
           autoPlay
         />
         <SecondaryHeroButtons title="Accesories" option="SHOP NOW" />
-        <ArrowDown />
+        <ArrowDown arrowClick={() => clickHandler('3')} />
       </div>
-      <div className={classes.modelYHero}>
+
+      <div className={classes.modelYHero} id="3">
         <div className={classes.imgContainer}>
           <img src={modelYHeroImg} alt="Hero" />
         </div>
         <SecondaryHeroButtons title="Model Y" option="ORDER NOW" />
-        <div className={classes.linksWrapper}>
+        <div className={classes.linksWrapper} id="4">
           <ul className={classes.links}>
             <li>Tesla 2020</li>
             <li>Privacy & legal</li>
