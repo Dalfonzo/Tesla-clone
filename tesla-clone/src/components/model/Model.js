@@ -1,7 +1,7 @@
 import React from 'react';
 import heroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
 import Speedometer from '../speedometer/Speedometer';
-
+import Button from '../button/Button';
 import classes from './model.module.scss';
 
 const Model = () => {
@@ -15,9 +15,7 @@ const Model = () => {
       <div className={classes.specsContainer}>
         <div className={classes.left}>
           <p className={classes.specsTitle}>
-            <span style={{ margin: '0 .7rem' }}>
-              <Speedometer />
-            </span>
+            <Speedometer />
             2.4s
           </p>
           <p className={classes.specstSubTitle}>From 0-60 mph</p>
@@ -30,6 +28,7 @@ const Model = () => {
           <p className={classes.specsTitle}>391 mi</p>
           <p className={classes.specstSubTitle}>Range (Est.)</p>
         </div>
+        <Button />
       </div>
     </div>
   );

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > button {
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
+    padding: 1rem 3.5rem;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      cursor: pointer;
+      color: white !important;
+    }
+  }
+}

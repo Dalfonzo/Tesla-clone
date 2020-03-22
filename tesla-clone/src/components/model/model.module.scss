@@ -51,7 +51,7 @@
     & > div {
       padding: 0.5rem 2rem;
 
-      &:not(:first-child) {
+      &:not(:first-child):not(:last-child) {
         border-left: 0.1px solid var(--secondary-color);
       }
 

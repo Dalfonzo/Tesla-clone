@@ -1,10 +1,12 @@
 $largo: 4.5rem;
 
 .container {
-  display: inline-block;
+  width: inherit;
   width: $largo;
   height: calc(#{$largo} * 0.6);
   position: relative;
+  display: inline-block;
+  margin: 0 0.5rem;
 
   .circle {
     background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5NSIgaGVpZ2h0PSI1MSI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOTQuOTkyIDQ4LjExNGE0Ny4wNTEgNDcuMDUxIDAgMDAtMTIuMTU3LTMxLjU3OGwtMS42ODItMS44NzJDNjIuNzA5LTMuODg5IDMyLjY4LTQuMDEyIDE0LjA4NSAxNC4zOUE0Ny4yNTUgNDcuMjU1IDAgMDAuMDU3IDQ4LjE5N3YyLjc5Nmg5LjI3MXYtMi43OTZoLTMuNjRBNDEuNTEyIDQxLjUxMiAwIDAxMTYuMzYgMjAuNDIxbDIuODAzIDIuNTQyIDEuODQ3LTIuMDk2LTIuODAxLTIuNDg4QTQxLjcwMiA0MS43MDIgMCAwMTQ2LjIyMiA2LjQ3NXY1LjMzN2gyLjgwMlY2LjM2M2E0MS43NDYgNDEuNzQ2IDAgMDEyOC4wMTEgMTEuOTg5bC0yLjc5OSAyLjM3NSAxLjg0NyAyLjA5NiAyLjgwMS0yLjQzYTQxLjQ5OCA0MS40OTggMCAwMTEwLjU5IDI3LjY2NmgtMy43NTV2Mi43OTRoOS4yNzN2LTIuNzM5eiIvPjwvc3ZnPg==');
@@ -33,7 +35,7 @@ $largo: 4.5rem;
     background-size: contain;
     position: absolute;
     left: 50%;
-    bottom: .3rem;
+    bottom: 0.3rem;
     transform: translate(-50%) rotate(90deg);
     transform-origin: 50% 100%;
   }
