@@ -1,0 +1,75 @@
+@mixin containerProps {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+@mixin fontProps {
+  z-index: 10;
+  color: var(--primary-color);
+}
+
+.container {
+  @include containerProps;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  img {
+    position: absolute;
+    width: 100%;
+    top: -15%;
+  }
+
+  .textWrapper {
+    position: relative;
+    height: fit-content;
+    top: 15%;
+
+    & > * {
+      @include fontProps;
+      text-align: center;
+      // text-transform: capitalize;
+    }
+
+    .title {
+      font-size: var(--medium-font-size);
+    }
+    .subTitle {
+      padding: 0.6rem 0;
+      font-size: var(--big-font-size);
+    }
+  }
+
+  .specsContainer {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & > div {
+      padding: 0.5rem 2rem;
+
+      &:not(:first-child) {
+        border-left: 0.1px solid var(--secondary-color);
+      }
+
+      & > * {
+        color: var(--secondary-color);
+      }
+
+      & > .specsTitle {
+        font-size: var(--medium-font-size);
+        font-weight: 600;
+      }
+      & > .specstSubTitle {
+        font-size: var(--normal-font-size);
+      }
+    }
+  }
+}
+.speedometer {
+  visibility: hidden;
+  border: 1px solid red;
+}

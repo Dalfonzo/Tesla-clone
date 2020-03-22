@@ -1,6 +1,7 @@
 :root {
   /* Colores */
   --primary-color: #fff;
+  --secondary-color: #000;
   --hover-color: #bec2c7;
   /* Tamaños de fuente */
   --small-font-size: 1.2rem;
