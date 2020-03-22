@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-import HeroControls from '../components/main-hero-controls/HeroControls';
-import HeroButtons from '../components/hero-buttons/HeroButtons';
-import SecondaryHeroButtons from '../components/secondary-hero-buttons/SecondaryHeroButtons';
-import ArrowDown from '../components/down-arrow/ArrowDown';
-import mainHeroImg from '../assets/images/main-hero-homepage-desktop.jpg';
-import energyHeroImg from '../assets/images/homepage-energy-hero-desktop.jpg';
-import modelYHeroImg from '../assets/images/tesla-model-1855169.jpg';
-import videoHero from '../assets/video/accessories-hero-desktop.mp4';
+import HeroControls from '../../components/home/main-hero-controls/HeroControls';
+import HeroButtons from '../../components/home/hero-buttons/HeroButtons';
+import SecondaryHeroButtons from '../../components/home/secondary-hero-buttons/SecondaryHeroButtons';
+import ArrowDown from '../../components/home/down-arrow/ArrowDown';
+import mainHeroImg from '../../assets/images/home/main-hero-homepage-desktop.jpg';
+import energyHeroImg from '../../assets/images/home/homepage-energy-hero-desktop.jpg';
+import modelYHeroImg from '../../assets/images/home/tesla-model-1855169.jpg';
+import videoHero from '../../assets/video/home/accessories-hero-desktop.mp4';
 
 import classes from './home.module.scss';
 
