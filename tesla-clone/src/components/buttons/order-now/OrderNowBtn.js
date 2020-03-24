@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './button.module.scss';
+import classes from './ordenNowBtn.module.scss';
 
 const Button = () => {
   return (

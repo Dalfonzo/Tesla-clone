@@ -1,7 +1,8 @@
 import React from 'react';
 import heroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
 import Speedometer from '../speedometer/Speedometer';
-import Button from '../button/Button';
+import OrderNowBtn from '../buttons/order-now/OrderNowBtn.js';
+
 import classes from './model.module.scss';
 
 const Model = () => {
@@ -28,7 +29,7 @@ const Model = () => {
           <p className={classes.specsTitle}>391 mi</p>
           <p className={classes.specstSubTitle}>Range (Est.)</p>
         </div>
-        <Button />
+        <OrderNowBtn />
       </div>
     </div>
   );

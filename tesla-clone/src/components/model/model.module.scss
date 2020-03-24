@@ -29,7 +29,6 @@
     & > * {
       @include fontProps;
       text-align: center;
-      // text-transform: capitalize;
     }
 
     .title {
@@ -47,6 +46,11 @@
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    :last-child {
+      //button
+      font-size: var(--normal-font-size);
+    }
 
     & > div {
       padding: 0.5rem 2rem;
@@ -68,8 +72,4 @@
       }
     }
   }
-}
-.speedometer {
-  visibility: hidden;
-  border: 1px solid red;
 }
