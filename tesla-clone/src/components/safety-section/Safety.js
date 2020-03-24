@@ -1,28 +1,22 @@
 import React from 'react';
 
 import safetyImg from '../../assets/images/model-s/safety-model-s-hero.png';
-import LearnMoreBtn from '../buttons/learn-more/LearnMoreBtn';
-import OrderNowBtn from '../buttons/order-now/OrderNowBtn';
+import VerticalAside from '../vertical-aside/VerticalAside';
 
 import classes from './safety.module.scss';
 
 const Safety = () => {
+  const verticalAsideProps = {
+    section: 'Safety',
+    title: 'High Impact Protection',
+    text:
+      'Model S is built from the ground up as an electric vehicle, with high-strength architecture and a floor-mounted battery pack allowing for incredible impact protection.'
+  };
+
   return (
     <div className={classes.container}>
       <div className={classes.leftSide}>
-        <div>
-          <p className={classes.section}>Safety</p>
-          <p className={classes.title}>High Impact Protection</p>
-          <p className={classes.text}>
-            Model S is built from the ground up as an electric vehicle, with
-            high-strength architecture and a floor-mounted battery pack allowing
-            for incredible impact protection.
-          </p>
-        </div>
-        <div className={classes.btnContainer}>
-          <LearnMoreBtn />
-          <OrderNowBtn />
-        </div>
+        <VerticalAside {...verticalAsideProps} />
       </div>
       <div className={classes.rightSide}>
         <div className={classes.line1}>Front-Impact Protection</div>

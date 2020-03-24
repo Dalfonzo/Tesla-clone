@@ -1,0 +1,22 @@
+.container {
+  padding: 4rem 2rem 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .section {
+    font-size: var(--normal-font-size);
+  }
+
+  .title {
+    font-size: var(--medium-font-size);
+    padding: 0.5rem 0;
+    font-weight: 600;
+  }
+
+  .text {
+    font-size: var(--normal-font-size);
+    line-height: 1.5;
+    padding: 1rem 0;
+  }
+}
