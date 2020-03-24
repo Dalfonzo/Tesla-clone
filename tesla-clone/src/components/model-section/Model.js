@@ -25,9 +25,7 @@ const Model = () => {
         <p className={classes.title}>Title</p>
         <p className={classes.subTitle}>subTitle</p>
       </div>
-      <span>
-        <HorizontalSpecs {...specsProps} />
-      </span>
+      <HorizontalSpecs {...specsProps} />
     </div>
   );
 };

@@ -18,7 +18,7 @@ const HorizontalSpecs = props => {
   }
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} style={{ color: props.textColor }}>
       <div className={classes.left} style={borderColor}>
         <p className={classes.specsTitle}>
           {props.speedometerOnFirstCell && props.speedometer && (

@@ -19,6 +19,7 @@ const Performance = () => {
     rightText:
       'Improved handling and aerodynamics allow for a top speed of 163 mph',
     borderColor: 'var(--primary-color)',
+    textColor: 'var(--primary-color)',
     invertColor: true
   };
 
@@ -33,9 +34,7 @@ const Performance = () => {
     <div className={classes.container}>
       <div className={classes.hero}>
         <img src={heroImg} alt="" />
-        <span style={{ color: 'white' }}>
-          <HorizontalSpecs {...specsProps} />
-        </span>
+        <HorizontalSpecs {...specsProps} />
       </div>
       <div className={classes.text}>
         <HorizontalAside {...horizontalAsideProps} />
