@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  :last-child {
+    //button
+    font-size: var(--normal-font-size);
+  }
+
+  & > div {
+    padding: 0.5rem 2rem;
+
+    &:not(:first-child):not(:last-child) {
+      border-left: 0.1px solid var(--secondary-color);
+    }
+
+    & > * {
+      color: var(--secondary-color);
+    }
+
+    & > .specsTitle {
+      font-size: var(--medium-font-size);
+      font-weight: 600;
+      text-align: center;
+    }
+    & > .specstSubTitle {
+      font-size: var(--normal-font-size);
+    }
+  }
+}
