@@ -1,8 +1,8 @@
 import React from 'react';
 
 import safetyImg from '../../assets/images/model-s/safety-model-s-hero.png';
-import LearnMoreBtn from '../../components/buttons/learn-more/LearnMoreBtn';
-import OrderNowBtn from '../../components/buttons/order-now/OrderNowBtn';
+import LearnMoreBtn from '../buttons/learn-more/LearnMoreBtn';
+import OrderNowBtn from '../buttons/order-now/OrderNowBtn';
 
 import classes from './safety.module.scss';
 

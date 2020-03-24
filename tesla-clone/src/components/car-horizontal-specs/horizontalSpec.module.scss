@@ -4,7 +4,9 @@
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+  width: 65%;
+  justify-content: center;
+
   :last-child {
     //button
     font-size: var(--normal-font-size);
@@ -18,14 +20,14 @@
     }
 
     & > * {
-      color: var(--secondary-color);
+      color: inherit;
     }
 
     & > .specsTitle {
       font-size: var(--medium-font-size);
       font-weight: 600;
-      text-align: center;
     }
+    
     & > .specstSubTitle {
       font-size: var(--normal-font-size);
     }

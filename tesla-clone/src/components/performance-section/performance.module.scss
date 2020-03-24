@@ -1,0 +1,23 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+
+  .hero {
+    height: 70%;
+    border: 1px solid red;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .text {
+    height: 30%;
+    border: 1px solid red;
+  }
+}

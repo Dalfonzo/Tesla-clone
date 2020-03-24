@@ -6,6 +6,7 @@ import classes from './model.module.scss';
 
 const Model = () => {
   const specsProps = {
+    speedometerOnFirstCell: true,
     button: true,
     speedometer: true,
     leftTitle: '2.4s',
@@ -13,7 +14,8 @@ const Model = () => {
     midTitle: '28 cu ft',
     midText: 'Best in Class Storage',
     rightTitle: '391 mi',
-    rightText: 'Range (Est.)'
+    rightText: 'Range (Est.)',
+    borderColor: 'var(--secondary-color)'
   };
 
   return (
@@ -24,7 +26,9 @@ const Model = () => {
         <p className={classes.subTitle}>subTitle</p>
       </div>
       {/* <div className={classes.specsContainer}> */}
-      <HorizontalSpecs {...specsProps} />
+      <span>
+        <HorizontalSpecs {...specsProps} />
+      </span>
       {/* </div> */}
     </div>
   );

@@ -1,7 +1,8 @@
 import React from 'react';
 
-import Model from '../../components/model/Model';
-import Safety from '../../components/safety/Safety';
+import Model from '../../components/model-section/Model';
+import Safety from '../../components/safety-section/Safety';
+import Performance from '../../components/performance-section/Performance';
 
 import classes from './models.module.scss';
 
@@ -10,6 +11,7 @@ const ModelS = () => {
     <div className={classes.container}>
       <Model />
       <Safety />
+      <Performance />
     </div>
   );
 };
