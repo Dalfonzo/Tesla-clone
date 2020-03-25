@@ -35,9 +35,7 @@ const Autopilot = () => {
           className={classes.videoPlayer}
           autoPlay
         />
-        {/* <div className={classes.wrapper}> */}
         <VerticalSpecs {...verticalSpecsProps} />
-        {/* </div> */}
       </div>
       <div className={classes.text}>
         <HorizontalAside {...horizontalAsideProps} />

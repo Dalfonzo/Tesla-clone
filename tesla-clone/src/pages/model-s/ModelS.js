@@ -5,6 +5,7 @@ import Safety from '../../components/safety-section/Safety';
 import Performance from '../../components/performance-section/Performance';
 import Range from '../../components/range-section/Range';
 import Autopilot from '../../components/autopilot-section/Autopilot';
+import Interior from '../../components/interior-section/Interior';
 
 import classes from './models.module.scss';
 
@@ -16,6 +17,7 @@ const ModelS = () => {
       <Performance />
       <Range />
       <Autopilot />
+      <Interior />
     </div>
   );
 };

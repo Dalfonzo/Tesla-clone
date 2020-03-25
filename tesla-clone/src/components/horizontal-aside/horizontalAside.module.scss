@@ -1,6 +1,10 @@
 .container {
   padding: 4rem 2rem 4rem 4rem;
   display: flex;
+  width: 70%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
   .left {
     flex: 35%;
