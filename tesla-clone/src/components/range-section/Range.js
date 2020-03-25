@@ -25,8 +25,7 @@ const Range = () => {
     rightTitle: '16,000+',
     rightText:
       'Superchargers placed along well-traveled routes around the world',
-    borderColor: 'var(--primary-color)',
-    textColor: 'var(--primary-color)'
+    borderColor: 'var(--primary-color)'
   };
 
   return (

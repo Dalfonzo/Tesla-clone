@@ -20,14 +20,14 @@
     }
 
     & > * {
-      color: inherit;
+      color: currentColor;
     }
 
     & > .specsTitle {
       font-size: var(--medium-font-size);
       font-weight: 600;
     }
-    
+
     & > .specstSubTitle {
       font-size: var(--normal-font-size);
     }

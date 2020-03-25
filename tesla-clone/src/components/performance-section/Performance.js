@@ -19,7 +19,6 @@ const Performance = () => {
     rightText:
       'Improved handling and aerodynamics allow for a top speed of 163 mph',
     borderColor: 'var(--primary-color)',
-    textColor: 'var(--primary-color)',
     invertColor: true
   };
 
