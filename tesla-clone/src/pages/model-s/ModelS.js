@@ -7,6 +7,7 @@ import Range from '../../components/range-section/Range';
 import Autopilot from '../../components/autopilot-section/Autopilot';
 import Interior from '../../components/interior-section/Interior';
 import Exterior from '../../components/exterior-section/Exterior';
+import Specs from '../../components/specs-section/Specs';
 
 import classes from './models.module.scss';
 
@@ -20,6 +21,7 @@ const ModelS = () => {
       <Autopilot />
       <Interior />
       <Exterior />
+      <Specs />
     </div>
   );
 };

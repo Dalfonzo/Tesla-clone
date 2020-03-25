@@ -3,7 +3,6 @@ import React from 'react';
 import heroImg from '../../assets/images/model-s/hero-high-viewport.jpg';
 import HorizontalAside from '../horizontal-aside/HorizontalAside';
 import HorizontalSpecs from '../car-horizontal-specs/HorizontalSpecs';
-
 import classes from './exterior.module.scss';
 
 const Exterior = () => {
@@ -22,6 +21,7 @@ const Exterior = () => {
     borderColor: 'var(--secondary-color)',
     invertColor: true
   };
+
   const horizontalAsideProps = {
     section: 'Exterior',
     title: 'Designed for Efficiency',
