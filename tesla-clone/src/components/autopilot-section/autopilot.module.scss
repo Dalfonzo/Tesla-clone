@@ -1,0 +1,33 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .video {
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+
+    .wrapper {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-10%, -50%);
+      width: 15%;
+    }
+
+    video {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .text {
+    height: 30%;
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
