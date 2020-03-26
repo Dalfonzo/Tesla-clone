@@ -39,6 +39,7 @@ import performanceHeroImg from '../../assets/images/model-s/model-s-performance.
 import rangeVideoHero from '../../assets/video/model-s/range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-s/hero@2_1.jpg';
+import exteriorHeroImg from '../../assets/images/model-s/hero-high-viewport.jpg';
 
 import classes from './models.module.scss';
 
@@ -165,7 +166,6 @@ const ModelS = () => {
           'Best in class storage, with more cargo room than most SUVs',
         position: 'right'
       },
-
       horizontalAsideProps: {
         section: 'Interior',
         title: 'Built Around the Driver',
@@ -173,7 +173,32 @@ const ModelS = () => {
           'Model S is built with best in class storage, seating for up to five adults and an expansive 17-inch touchscreen. Advanced noise engineering creates sound dynamics comparable to a recording studio, while the standard Glass Roof provides a spacious interior experience for every passenger.'
       }
     },
-    exteriorProps: {},
+    exteriorProps: {
+      /* propiedades de exterior section */
+      heroImg: exteriorHeroImg,
+      specsProps: {
+        speedometer: false,
+        speedometerOnFirstCell: false,
+        button: false,
+        leftTitle: 'Signature Colors',
+        leftText: 'Customize Model S with signature, multi-layered paint',
+        midTitle: '0.23c',
+        midText:
+          'The most aerodynamic car in its class with the lowest drag coefficient on earth',
+        rightTitle: 'Roof Rack Compatible',
+        rightText:
+          'A standard, expansive Glass Roof provides more headroom and UV protection',
+        borderColor: 'var(--secondary-color)',
+        invertColor: true
+      },
+
+      horizontalAsideProps: {
+        section: 'Exterior',
+        title: 'Designed for Efficiency',
+        text:
+          'Model S was designed for speed and endurance—with incredible aerodynamics, ludicrous performance and uncompromised aesthetics. Automatic door handles auto-present upon approach and withdraw when closed.'
+      }
+    },
     specsProps: {},
     orderProps: {}
   };
