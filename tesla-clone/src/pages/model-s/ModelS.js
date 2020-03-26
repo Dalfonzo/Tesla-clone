@@ -52,6 +52,7 @@ const ModelS = () => {
       /* propiedades de performance section */
       heroImg: performanceHeroImg,
       specsProps: {
+        invertColor: true,
         speedometer: true,
         speedometerOnFirstCell: false,
         button: false,
@@ -63,9 +64,7 @@ const ModelS = () => {
           'The quickest acceleration on earth—from zero to 60 mph in as little as 2.4 seconds',
         rightTitle: '163 mph',
         rightText:
-          'Improved handling and aerodynamics allow for a top speed of 163 mph',
-        borderColor: 'var(--primary-color)',
-        invertColor: true
+          'Improved handling and aerodynamics allow for a top speed of 163 mph'
       },
       horizontalAsideProps: {
         section: 'Performance',
@@ -84,6 +83,7 @@ const ModelS = () => {
           'Model S can get you anywhere you want to go—with industry-leading range and convenient charging options, all over the world.'
       },
       specsProps: {
+        invertColor: true,
         speedometerOnFirstCell: false,
         button: false,
         speedometer: false,
@@ -95,8 +95,7 @@ const ModelS = () => {
           'Recharge up to 136 miles in 15 minutes at any Supercharger location',
         rightTitle: '16,000+',
         rightText:
-          'Superchargers placed along well-traveled routes around the world',
-        borderColor: 'var(--primary-color)'
+          'Superchargers placed along well-traveled routes around the world'
       }
     },
     autopilotProps: {
@@ -124,7 +123,9 @@ const ModelS = () => {
     interiorProps: {
       /* propiedades de interior section */
       heroImg: interiorHeroImg,
+      heroVideo: null,
       verticalSpecsProps: {
+        invertColor: true,
         topTitle: '17inch',
         topText:
           'An expansive touchscreen display designed to improve over time',

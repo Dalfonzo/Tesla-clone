@@ -61,8 +61,7 @@ const pageProps = {
         'Improved handling and aerodynamics allow for a top speed of 162 mph',
       rightTitle: 'AWD',
       rightText:
-        'Dual Motor All-Wheel Drive instantly controls traction and torque, in all weather conditions',
-      borderColor: 'var(--primary-color)'
+        'Dual Motor All-Wheel Drive instantly controls traction and torque, in all weather conditions'
     },
     horizontalAsideProps: {
       section: 'Performance',
@@ -91,8 +90,7 @@ const pageProps = {
       midText: 'Recharge up to 172 mi in 15 minutes at Supercharger locations',
       rightTitle: '16,000+',
       rightText:
-        'Superchargers placed along well-traveled routes around the world',
-      borderColor: 'var(--primary-color)'
+        'Superchargers placed along well-traveled routes around the world'
     }
   },
   autopilotProps: {
@@ -200,6 +198,7 @@ const pageProps = {
   },
   orderProps: {
     /* propiedades de order section */
+    invertColor: true,
     title: 'Experience Model 3',
     heroImg: orderHeroImg
   }
