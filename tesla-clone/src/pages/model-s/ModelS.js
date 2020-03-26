@@ -34,13 +34,14 @@ import React from 'react';
 import WithModel from '../../hoc/models-pages-hoc/withModel';
 
 import modelHeroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
+import safetyHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 
 import classes from './models.module.scss';
 
 const ModelS = () => {
   const pageProps = {
     modelProps: {
-      //props para model section
+      /* propiedades de model section */
       title: 'Tesla',
       subtitle: 'Model S',
       heroImg: modelHeroImg,
@@ -57,7 +58,21 @@ const ModelS = () => {
         borderColor: 'var(--secondary-color)'
       }
     },
-    safetyProps: {},
+    safetyProps: {
+      /* propiedades de safety section */
+      heroImg: safetyHeroImg,
+      verticalAsideProps: {
+        section: 'Safety',
+        title: 'High Impact Protection',
+        text:
+          'Model S is built from the ground up as an electric vehicle, with high-strength architecture and a floor-mounted battery pack allowing for incredible impact protection.'
+      },
+      carParts: {
+        partOne: 'Front-Impact Protection',
+        partTwo: 'Side-Impact Protection',
+        partThree: 'Very Low Rollover Risk'
+      }
+    },
     performanceProps: {},
     rangeProps: {},
     autopilotProps: {},
