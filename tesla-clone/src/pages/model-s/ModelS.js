@@ -30,8 +30,7 @@ const ModelS = () => {
         midTitle: '28 cu ft',
         midText: 'Best in Class Storage',
         rightTitle: '391 mi',
-        rightText: 'Range (Est.)',
-        borderColor: 'var(--secondary-color)'
+        rightText: 'Range (Est.)'
       }
     },
     safetyProps: {

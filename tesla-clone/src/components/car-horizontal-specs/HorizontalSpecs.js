@@ -5,43 +5,39 @@ import Speedometer from '../speedometer/Speedometer';
 import OrderNowBtn from '../buttons/order-now/OrderNowBtn.js';
 
 const HorizontalSpecs = props => {
-  const borderColor = { borderColor: props.borderColor };
-
-  let style = null;
-  if (!props.button) {
-    style = { borderLeft: `0.1px solid ${props.borderColor}` };
-  }
-
-  let speedometerProps = null;
+  let changeColor = false;
   if (props.invertColor) {
-    speedometerProps = { invertColor: true };
+    changeColor = true;
   }
 
   return (
-    <div className={classes.container}>
-      <div className={classes.left} style={borderColor}>
+    <div
+      className={classes.container}
+      style={changeColor ? { filter: 'invert(1)' } : null}
+    >
+      <div className={classes.left}>
         <p className={classes.specsTitle}>
           {props.speedometerOnFirstCell && props.speedometer && (
-            <Speedometer {...speedometerProps} />
+            <Speedometer invertColor={changeColor} />
           )}
           {props.leftTitle}
         </p>
         <p className={classes.specstSubTitle}>{props.leftText}</p>
       </div>
-      <div className={classes.mid} style={borderColor}>
+      <div className={classes.mid}>
         <p className={classes.specsTitle}>
           {!props.speedometerOnFirstCell && props.speedometer && (
-            <Speedometer {...speedometerProps} />
+            <Speedometer invertColor={changeColor} />
           )}
           {props.midTitle}
         </p>
         <p className={classes.specstSubTitle}>{props.midText}</p>
       </div>
-      <div className={classes.right} style={style}>
+      <div className={classes.right}>
         <p className={classes.specsTitle}>{props.rightTitle}</p>
         <p className={classes.specstSubTitle}>{props.rightText}</p>
       </div>
-      {props.button && <OrderNowBtn />}
+      {props.button && <OrderNowBtn invertColor={changeColor} />}
     </div>
   );
 };

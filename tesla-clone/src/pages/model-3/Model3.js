@@ -27,7 +27,7 @@ const pageProps = {
       midText: 'Range',
       rightTitle: 'AWD',
       rightText: 'Dual Motor',
-      borderColor: 'var(--primary-color)'
+      invertColor: true
     }
   },
   safetyProps: {
