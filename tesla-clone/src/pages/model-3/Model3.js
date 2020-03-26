@@ -6,7 +6,7 @@ import safetyHeroImg from '../../assets/images/model-3/model-3-hero.png';
 import performanceHeroVideo from '../../assets/video/model-3/Model 3 - performance.mp4';
 import rangeVideoHero from '../../assets/video/model-3/Model 3 -range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
-import interiorHeroImg from '../../assets/images/model-s/hero@2_1.jpg';
+import interiorHeroVideo from '../../assets/video/model-3/Model 3 - interior.mp4';
 import specsHeroImg from '../../assets/images/model-3/top@2.png';
 import orderHeroImg from '../../assets/images/model-3/Desktop_Model3_Order_102719.png';
 
@@ -119,8 +119,10 @@ const pageProps = {
   },
   interiorProps: {
     /* propiedades de interior section */
-    heroImg: interiorHeroImg,
+    heroImg: null,
+    heroVideo: interiorHeroVideo,
     verticalSpecsProps: {
+      invertColor: true,
       topTitle: '15inch',
       topText: 'A touchscreen display designed to improve over time',
       midTitle: 'Wi-fi',

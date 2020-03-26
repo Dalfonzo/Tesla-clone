@@ -5,9 +5,9 @@ import Speedometer from '../speedometer/Speedometer';
 import OrderNowBtn from '../buttons/order-now/OrderNowBtn.js';
 
 const HorizontalSpecs = props => {
-  let changeColor = false;
+  let changeColor = null;
   if (props.invertColor) {
-    changeColor = true;
+    changeColor = { filter: 'invert(1)' };
   }
 
   let border = null;
@@ -16,10 +16,7 @@ const HorizontalSpecs = props => {
   }
 
   return (
-    <div
-      className={classes.container}
-      style={changeColor ? { filter: 'invert(1)' } : null}
-    >
+    <div className={classes.container} style={changeColor}>
       <div className={classes.left}>
         <p className={classes.specsTitle}>
           {props.speedometerOnFirstCell && props.speedometer && (

@@ -6,7 +6,14 @@
     height: 70%;
     overflow: hidden;
     position: relative;
-    color: white;
+    // color: white;
+    
+    video {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
 
     img {
       width: 100%;

@@ -2,7 +2,13 @@ import React from 'react';
 import classes from './verticalSpecs.module.scss';
 
 const VerticalSpecs = props => {
+  let changeColor = null;
+  if (props.invertColor) {
+    changeColor = { filter: 'invert(1)' };
+  }
+
   const generalStyle = {
+    ...changeColor,
     position: 'absolute',
     transform: 'translate(-10%, -50%)',
     width: '15%',
