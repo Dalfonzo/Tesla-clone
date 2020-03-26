@@ -1,14 +1,13 @@
 import React from 'react';
-import heroImg from '../../assets/images/model-s/models-2.jpg';
 import Footer from '../footer/Footer';
 
 import classes from './order.module.scss';
 
-const Order = () => {
+const Order = ({ title, heroImg }) => {
   return (
     <div className={classes.container}>
       <div className={classes.left}>
-        <p>Order Model S</p>
+        <p>Order {title}</p>
         <button>ORDER NOW</button>
       </div>
       <div className={classes.right}>
