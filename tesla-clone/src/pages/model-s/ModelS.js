@@ -199,7 +199,61 @@ const ModelS = () => {
           'Model S was designed for speed and endurance—with incredible aerodynamics, ludicrous performance and uncompromised aesthetics. Automatic door handles auto-present upon approach and withdraw when closed.'
       }
     },
-    specsProps: {},
+    specsProps: {
+      title: 'Model S',
+      leftList: [
+        {
+          title: 'Battery',
+          text: 'Long Range'
+        },
+        {
+          title: 'Acceleration',
+          text: '2.4 seconds 0-60 mph'
+        },
+        {
+          title: 'Range',
+          text: '348 miles (EPA est.)'
+        },
+        {
+          title: 'Drive',
+          text: 'All-Wheel Drive'
+        },
+        {
+          title: 'Seating',
+          text: '5 Adults'
+        },
+        {
+          title: 'Wheels',
+          text: '19” or 21”'
+        }
+      ],
+      rightList: [
+        {
+          title: 'Weight',
+          text: '4,941 lbs'
+        },
+        {
+          title: 'Cargo',
+          text: '28 cu ft'
+        },
+        {
+          title: 'Displays',
+          text: 'Driver Display + 17" Touchscreen'
+        },
+        {
+          title: 'Supercharging Max/ Payment Type',
+          text: '200 kW max FreeSupercharging'
+        },
+        {
+          title: 'Onboard Charger Max',
+          text: '11.5 kW max (48A)'
+        },
+        {
+          title: 'Warranty',
+          text: 'Basic Vehicle - 4 years or 50,000 miles,whichever comes first'
+        }
+      ]
+    },
     orderProps: {}
   };
   return (
