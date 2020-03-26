@@ -36,6 +36,7 @@ import WithModel from '../../hoc/models-pages-hoc/withModel';
 import modelHeroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
 import safetyHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 import performanceHeroImg from '../../assets/images/model-s/model-s-performance.jpg';
+import rangeVideoHero from '../../assets/video/model-s/range.mp4';
 
 import classes from './models.module.scss';
 
@@ -100,7 +101,30 @@ const ModelS = () => {
           'Model S sets an industry standard for performance and safety. Tesla’s all-electric powertrain delivers unparalleled performance in all weather conditions – with Dual Motor All-Wheel Drive, adaptive air suspension and ludicrous acceleration.'
       }
     },
-    rangeProps: {},
+    rangeProps: {
+      videoHero: rangeVideoHero,
+      verticalAsideProps: {
+        section: 'Range',
+        title: 'Go Anywhere',
+        text:
+          'Model S can get you anywhere you want to go—with industry-leading range and convenient charging options, all over the world.'
+      },
+      specsProps: {
+        speedometerOnFirstCell: false,
+        button: false,
+        speedometer: false,
+        leftTitle: '391 mi',
+        leftText:
+          'Go anywhere with up to 391 miles of range on a single charge',
+        midTitle: '15 min',
+        midText:
+          'Recharge up to 136 miles in 15 minutes at any Supercharger location',
+        rightTitle: '16,000+',
+        rightText:
+          'Superchargers placed along well-traveled routes around the world',
+        borderColor: 'var(--primary-color)'
+      }
+    },
     autopilotProps: {},
     interiorProps: {},
     exteriorProps: {},
