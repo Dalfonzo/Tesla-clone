@@ -38,6 +38,7 @@ import safetyHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 import performanceHeroImg from '../../assets/images/model-s/model-s-performance.jpg';
 import rangeVideoHero from '../../assets/video/model-s/range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
+import interiorHeroImg from '../../assets/images/model-s/hero@2_1.jpg';
 
 import classes from './models.module.scss';
 
@@ -149,7 +150,29 @@ const ModelS = () => {
         position: 'left'
       }
     },
-    interiorProps: {},
+    interiorProps: {
+      /* propiedades de interior section */
+      heroImg: interiorHeroImg,
+      verticalSpecsProps: {
+        topTitle: '17inch',
+        topText:
+          'An expansive touchscreen display designed to improve over time',
+        midTitle: 'Wi-fi',
+        midText:
+          'Over-the-air software updates introduce new features, functionality and performance',
+        bottomTitle: '28 cu ft',
+        bottomText:
+          'Best in class storage, with more cargo room than most SUVs',
+        position: 'right'
+      },
+
+      horizontalAsideProps: {
+        section: 'Interior',
+        title: 'Built Around the Driver',
+        text:
+          'Model S is built with best in class storage, seating for up to five adults and an expansive 17-inch touchscreen. Advanced noise engineering creates sound dynamics comparable to a recording studio, while the standard Glass Roof provides a spacious interior experience for every passenger.'
+      }
+    },
     exteriorProps: {},
     specsProps: {},
     orderProps: {}
