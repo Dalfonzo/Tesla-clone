@@ -37,6 +37,7 @@ import modelHeroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
 import safetyHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 import performanceHeroImg from '../../assets/images/model-s/model-s-performance.jpg';
 import rangeVideoHero from '../../assets/video/model-s/range.mp4';
+import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 
 import classes from './models.module.scss';
 
@@ -102,6 +103,7 @@ const ModelS = () => {
       }
     },
     rangeProps: {
+      /* propiedades de range section */
       videoHero: rangeVideoHero,
       verticalAsideProps: {
         section: 'Range',
@@ -125,7 +127,28 @@ const ModelS = () => {
         borderColor: 'var(--primary-color)'
       }
     },
-    autopilotProps: {},
+    autopilotProps: {
+      /* propiedades de autopilot section */
+      videoHero: autoPilotVideoHero,
+      horizontalAsideProps: {
+        section: 'Autopilot',
+        title: 'Future of Driving',
+        text:
+          'Autopilot advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.'
+      },
+      verticalSpecsProps: {
+        topTitle: '360°',
+        topText:
+          'Rear, side and forward-facing cameras provide maximum visibility',
+        midTitle: '160 m',
+        midText:
+          'Forward-facing radar provides a long-range view of distant objects',
+        bottomTitle: 'Ultrasonic Sensors',
+        bottomText:
+          'Detects nearby cars, prevents potential collisions and assists with parking',
+        position: 'left'
+      }
+    },
     interiorProps: {},
     exteriorProps: {},
     specsProps: {},
