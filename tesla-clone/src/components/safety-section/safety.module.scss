@@ -1,6 +1,5 @@
-@mixin lineProps($height, $left, $top, $foo: false) {
+@mixin lineProps($height, $left, $top) {
   font-size: var(--normal-font-size);
-  border-left: 0.3rem solid var(--secondary-color);
   padding-left: 1rem;
   z-index: 100;
   position: absolute;
@@ -9,20 +8,15 @@
   left: $left;
   top: $top;
 
-  &::before {
-    top: 100%;
-    @if ($foo) {
-      top: 0%;
-    }
-    content: '';
-    position: absolute;
-    height: 1rem;
-    width: 1rem;
-    left: -0.1rem;
-    transform: translateX(-50%);
+  & > span {
     border: 2px solid var(--secondary-color);
-    border-radius: 100%;
-    background-color: var(--primary-color);
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    &:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
   }
 }
 
@@ -49,9 +43,7 @@
       @include lineProps(10rem, 46%, 12%);
     }
     .line3 {
-      display: flex;
-      align-items: flex-end;
-      @include lineProps(15rem, 50%, 55%, true);
+      @include lineProps(0, 50%, 80%);
     }
 
     img {
