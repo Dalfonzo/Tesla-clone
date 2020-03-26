@@ -10,8 +10,6 @@ import Exterior from '../../components/exterior-section/Exterior';
 import Specs from '../../components/specs-section/Specs';
 import Order from '../../components/order-section/Order';
 
-import classes from './modelHoc.module.scss';
-
 const ModelHoc = ({
   modelProps,
   safetyProps,
