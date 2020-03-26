@@ -15,15 +15,21 @@ const Safety = ({ verticalAsideProps, heroImg, carParts }) => {
       <div className={classes.rightSide}>
         <div className={classes.line1}>
           <span>1</span>
-          {carParts.partOne} <Icon icon={faAngleDoubleRight} />
+          <Icon icon={faAngleDoubleRight} />
+          {'  '}
+          {carParts.partOne}
         </div>
         <div className={classes.line2}>
           <span>2</span>
-          {carParts.partTwo} <Icon icon={faAngleDoubleRight} />
+          <Icon icon={faAngleDoubleRight} />
+          {'  '}
+          {carParts.partTwo}
         </div>
         <div className={classes.line3}>
           <span>3</span>
-          {carParts.partThree} <Icon icon={faAngleDoubleRight} />
+          <Icon icon={faAngleDoubleRight} />
+          {'  '}
+          {carParts.partThree}
         </div>
         <img src={heroImg} alt="" />
       </div>
