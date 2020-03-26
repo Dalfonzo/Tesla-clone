@@ -3,6 +3,7 @@
   height: 100vh;
   overflow: hidden;
   display: flex;
+  position: relative;
 
   .left {
     flex: 30%;
@@ -42,5 +43,11 @@
       transform: translate(-50%, -50%);
       width: 100%;
     }
+  }
+  footer {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

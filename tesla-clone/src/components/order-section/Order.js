@@ -1,5 +1,7 @@
 import React from 'react';
 import heroImg from '../../assets/images/model-s/models-2.jpg';
+import Footer from '../footer/Footer';
+
 import classes from './order.module.scss';
 
 const Order = () => {
@@ -12,6 +14,9 @@ const Order = () => {
       <div className={classes.right}>
         <img src={heroImg} alt="" />
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };

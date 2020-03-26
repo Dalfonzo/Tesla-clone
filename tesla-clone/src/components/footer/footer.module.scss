@@ -1,0 +1,14 @@
+.links {
+  display: flex;
+  font-size: var(--normal-font-size);
+  list-style: none;
+
+  & > li {
+    text-transform: capitalize;
+    padding: 1rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
