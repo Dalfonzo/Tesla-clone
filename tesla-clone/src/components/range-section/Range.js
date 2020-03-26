@@ -8,13 +8,7 @@ const Range = ({ verticalAsideProps, specsProps, videoHero }) => {
   return (
     <div className={classes.container}>
       <div className={classes.video}>
-        <video
-          muted
-          loop
-          src={videoHero}
-          className={classes.videoPlayer}
-          autoPlay
-        />
+        <video muted loop src={videoHero} autoPlay />
         <HorizontalSpecs {...specsProps} />
       </div>
       <div className={classes.aside}>
