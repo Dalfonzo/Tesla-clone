@@ -3,14 +3,13 @@ import WithModel from '../../hoc/models-pages-hoc/withModel';
 
 import modelHeroImg from '../../assets/images/model-3/model-3-hero-desktop-v2.jpg';
 import safetyHeroImg from '../../assets/images/model-3/model-3-hero.png';
-import performanceHeroImg from '../../assets/images/model-s/model-s-performance.jpg';
+import performanceHeroVideo from '../../assets/video/model-3/Model 3 - performance.mp4';
 import rangeVideoHero from '../../assets/video/model-3/Model 3 -range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-s/hero@2_1.jpg';
 import specsHeroImg from '../../assets/images/model-3/top@2.png';
 import orderHeroImg from '../../assets/images/model-3/Desktop_Model3_Order_102719.png';
 
-import classes from './model3.module.scss';
 const pageProps = {
   modelProps: {
     /* propiedades de model section */
@@ -47,8 +46,10 @@ const pageProps = {
   },
   performanceProps: {
     /* propiedades de performance section */
-    heroImg: performanceHeroImg,
+    heroImg: null,
+    heroVideo: performanceHeroVideo,
     specsProps: {
+      invertColor: true,
       speedometer: true,
       speedometerOnFirstCell: true,
       button: false,
@@ -61,8 +62,7 @@ const pageProps = {
       rightTitle: 'AWD',
       rightText:
         'Dual Motor All-Wheel Drive instantly controls traction and torque, in all weather conditions',
-      borderColor: 'var(--primary-color)',
-      invertColor: true
+      borderColor: 'var(--primary-color)'
     },
     horizontalAsideProps: {
       section: 'Performance',

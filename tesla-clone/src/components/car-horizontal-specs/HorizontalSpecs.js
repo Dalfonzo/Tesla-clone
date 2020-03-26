@@ -10,6 +10,11 @@ const HorizontalSpecs = props => {
     changeColor = true;
   }
 
+  let border = null;
+  if (!props.button) {
+    border = { borderLeft: '0.1px solid var(--secondary-color)' };
+  }
+
   return (
     <div
       className={classes.container}
@@ -33,7 +38,7 @@ const HorizontalSpecs = props => {
         </p>
         <p className={classes.specstSubTitle}>{props.midText}</p>
       </div>
-      <div className={classes.right}>
+      <div className={classes.right} style={border}>
         <p className={classes.specsTitle}>{props.rightTitle}</p>
         <p className={classes.specstSubTitle}>{props.rightText}</p>
       </div>
