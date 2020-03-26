@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 
-import heroImg from '../../assets/images/model-s/MS-specs-desktop.jpg';
 import classes from './specs.module.scss';
 
-const Specs = ({ title, leftList, rightList }) => {
+const Specs = ({ title, leftList, rightList, heroImg }) => {
   const [active, setActive] = useState('PERFORMANCE'); //pendiente
 
   const renderList = arr => {

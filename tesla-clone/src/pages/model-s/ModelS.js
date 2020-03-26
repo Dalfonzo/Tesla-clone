@@ -8,6 +8,8 @@ import rangeVideoHero from '../../assets/video/model-s/range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-s/hero@2_1.jpg';
 import exteriorHeroImg from '../../assets/images/model-s/hero-high-viewport.jpg';
+import specsHeroImg from '../../assets/images/model-s/MS-specs-desktop.jpg';
+
 import orderHeroImg from '../../assets/images/model-s/models-2.jpg';
 
 import classes from './models.module.scss';
@@ -169,6 +171,8 @@ const ModelS = () => {
       }
     },
     specsProps: {
+      /* propiedades de specs section */
+      heroImg: specsHeroImg,
       title: 'Model S',
       leftList: [
         {
@@ -224,10 +228,12 @@ const ModelS = () => {
       ]
     },
     orderProps: {
+      /* propiedades de order section */
       title: 'Model S',
       heroImg: orderHeroImg
     }
   };
+
   return (
     <div className={classes.container}>
       <WithModel {...pageProps} />

@@ -23,15 +23,15 @@ const ModelHoc = ({
 }) => {
   return (
     <div>
-      <Model {...modelProps} />
-      <Safety {...safetyProps} />
-      <Performance {...performanceProps} />
-      <Range {...rangeProps} />
-      <Autopilot {...autopilotProps} />
-      <Interior {...interiorProps} />
-      <Exterior {...exteriorProps} />
-      <Specs {...specsProps} />
-      <Order {...orderProps} />
+      {modelProps && <Model {...modelProps} />}
+      {safetyProps && <Safety {...safetyProps} />}
+      {performanceProps && <Performance {...performanceProps} />}
+      {rangeProps && <Range {...rangeProps} />}
+      {autopilotProps && <Autopilot {...autopilotProps} />}
+      {interiorProps && <Interior {...interiorProps} />}
+      {exteriorProps && <Exterior {...exteriorProps} />}
+      {specsProps && <Specs {...specsProps} />}
+      {orderProps && <Order {...orderProps} />}
     </div>
   );
 };
