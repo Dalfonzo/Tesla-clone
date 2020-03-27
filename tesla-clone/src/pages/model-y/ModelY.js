@@ -8,8 +8,7 @@ import safetyHeroImg from '../../assets/images/model-y/safety.png';
 import rangeVideoHero from '../../assets/video/model-y/Model Y - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-y/interior_hero@2.jpg';
-import exteriorHeroImg from '../../assets/images/model-x/exterior.jpg';
-import specsHeroImg from '../../assets/images/model-x/MX-specs-desktop.jpg';
+import specsHeroImg from '../../assets/images/model-y/ModelYSilhouette.png';
 import orderHeroImg from '../../assets/images/model-x/order.jpg';
 
 const pageProps = {
@@ -114,34 +113,10 @@ const pageProps = {
         'With an elevated seating position and low dash, the driver has a commanding view of the road ahead. The interior of Model Y is simple and clean, with a 15-inch touch screen, immersive sound system and an expansive all-glass roof that creates extra headroom and provides a seamless view of the sky.'
     }
   },
-  exteriorProps: {
-    /* propiedades de exterior section */
-    heroImg: exteriorHeroImg,
-    specsProps: {
-      invertColor: false,
-      speedometer: false,
-      speedometerOnFirstCell: false,
-      button: false,
-      leftTitle: 'Signature Colors',
-      leftText: 'Customize Model X with signature, multi-layered paint',
-      midTitle: '0.23c',
-      midText:
-        'The most aerodynamic car in its class with the lowest drag coefficient on earth',
-      rightTitle: 'Falcon Wing Doors',
-      rightText: 'Enhanced accessibility to the second and third rows'
-    },
-
-    horizontalAsideProps: {
-      section: 'Exterior',
-      title: 'Designed for Efficiency',
-      text:
-        'Model X is built for efficiency—with an uncompromised design, allowing for industry-leading range, performance and utility. A spoiler provides incredible aerodynamics and the lowest drag coefficient of any vehicle in its class.'
-    }
-  },
   specsProps: {
     /* propiedades de specs section */
     heroImg: specsHeroImg,
-    title: 'Model X',
+    title: 'Model Y',
     leftList: [
       {
         title: 'Battery',
@@ -149,11 +124,11 @@ const pageProps = {
       },
       {
         title: 'Acceleration',
-        text: '3.2 seconds 0-60 mph'
+        text: '3.5s 0-60 mph'
       },
       {
         title: 'Range',
-        text: '322 miles'
+        text: '315 miles (EPA est.)'
       },
       {
         title: 'Drive',
@@ -165,25 +140,25 @@ const pageProps = {
       },
       {
         title: 'Wheels',
-        text: '20” or 22”'
+        text: '19"'
       }
     ],
     rightList: [
       {
-        title: 'Weight',
-        text: '5,531 lbs'
+        title: 'Max Cargo Volume',
+        text: '68 cu ft'
       },
       {
-        title: 'Cargo',
-        text: '88 cu ft'
+        title: 'Top Speed',
+        text: '145 mph'
       },
       {
         title: 'Displays',
-        text: 'Driver Display + 17" Touchscreen'
+        text: '15" Center Touchscreen'
       },
       {
-        title: 'Supercharging Max/ Payment Type',
-        text: '200 kW max; Free Supercharging'
+        title: 'Supercharging',
+        text: 'Pay Per Useg'
       },
       {
         title: 'Onboard Charger Max',
@@ -197,7 +172,7 @@ const pageProps = {
   },
   orderProps: {
     /* propiedades de order section */
-    invertColor: false,
+    invertColor: true,
     title: 'Model X',
     heroImg: orderHeroImg
   }
