@@ -160,7 +160,7 @@ const ModelS = () => {
         rightText:
           'A standard, expansive Glass Roof provides more headroom and UV protection',
         borderColor: 'var(--secondary-color)',
-        invertColor: true
+        invertColor: false
       },
 
       horizontalAsideProps: {
