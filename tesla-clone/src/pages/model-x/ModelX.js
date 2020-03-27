@@ -1,11 +1,9 @@
 import React from 'react';
 import WithModel from '../../hoc/models-pages-hoc/withModel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 import modelHeroVideo from '../../assets/video/model-x/Model X - model.mp4';
 import safetyHeroImg from '../../assets/images/model-x/safety-model-x-hero.png';
-import performanceHeroVideo from '../../assets/video/model-3/Model 3 - performance.mp4';
+import performanceHeroImg from '../../assets/images/model-x/performance-hero@2.jpg';
 import rangeVideoHero from '../../assets/video/model-3/Model 3 -range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroVideo from '../../assets/video/model-3/Model 3 - interior.mp4';
@@ -50,28 +48,28 @@ const pageProps = {
   },
   performanceProps: {
     /* propiedades de performance section */
-    heroImg: null,
-    heroVideo: performanceHeroVideo,
+    heroImg: performanceHeroImg,
+    heroVideo: null,
     specsProps: {
       invertColor: true,
       speedometer: true,
-      speedometerOnFirstCell: true,
+      speedometerOnFirstCell: false,
       button: false,
-      leftTitle: '3.2s',
+      leftTitle: 'AWD',
       leftText:
-        'Quickest acceleration—from zero to 60 mph in as little as 3.2 seconds',
-      midTitle: '162mph',
+        'Dual Motor All-Wheel Drive instantly controls traction and torque, in all weather conditions',
+      midTitle: '3.2s',
       midText:
-        'Improved handling and aerodynamics allow for a top speed of 162 mph',
-      rightTitle: 'AWD',
+        'The quickest SUV on earth—from zero to 60 mph in as little as 3.2 seconds',
+      rightTitle: '★★★★★',
       rightText:
-        'Dual Motor All-Wheel Drive instantly controls traction and torque, in all weather conditions'
+        'The highest safety ratings ever, with the lowest probability of occupant injury'
     },
     horizontalAsideProps: {
       section: 'Performance',
-      title: 'Quickest Acceleration',
+      title: 'The Quickest SUV',
       text:
-        'Model 3 comes with the option of dual motor all-wheel drive, 20” Performance Wheels and Brakes and lowered suspension for total control, in all weather conditions. And a carbon fiber spoiler improves stability at high speeds, all allowing Model 3 to accelerate from 0-60 mph in as little as 3.2 seconds.'
+        'Tesla’s all-electric powertrain delivers unparalleled performance in all weather conditions, with Dual Motor All-Wheel Drive, adaptive air suspension and the quickest acceleration of any SUV on the road—from zero to 60 mph in 3.2 seconds.'
     }
   },
   rangeProps: {
@@ -81,7 +79,7 @@ const pageProps = {
       section: 'Range',
       title: 'Go Anywhere',
       text:
-        'Model 3 is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 16,000 Superchargers worldwide, with six new locations opening every week.'
+        'Model X can get you anywhere you want to go—with industry-leading range and convenient charging options, all over the world.'
     },
     specsProps: {
       invertColor: true,
