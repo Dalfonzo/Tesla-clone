@@ -1,12 +1,14 @@
 import React from 'react';
 import WithModel from '../../hoc/models-pages-hoc/withModel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWifi, faSolarPanel } from '@fortawesome/free-solid-svg-icons';
 
 import modelHeroVideo from '../../assets/video/model-x/Model X - model.mp4';
 import safetyHeroImg from '../../assets/images/model-x/safety-model-x-hero.png';
 import performanceHeroImg from '../../assets/images/model-x/performance-hero@2.jpg';
 import rangeVideoHero from '../../assets/video/model-x/Model X - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
-import interiorHeroVideo from '../../assets/video/model-3/Model 3 - interior.mp4';
+import interiorHeroImg from '../../assets/images/model-x/hero@2_3.jpg';
 import specsHeroImg from '../../assets/images/model-3/top@2.png';
 import orderHeroImg from '../../assets/images/model-3/Desktop_Model3_Order_102719.png';
 
@@ -120,16 +122,16 @@ const pageProps = {
   },
   interiorProps: {
     /* propiedades de interior section */
-    heroImg: null,
-    heroVideo: interiorHeroVideo,
+    heroImg: interiorHeroImg,
+    heroVideo: null,
     verticalSpecsProps: {
       invertColor: true,
-      topTitle: '15inch',
-      topText: 'A touchscreen display designed to improve over time',
-      midTitle: 'Wi-fi',
+      topTitle: '17inch',
+      topText: 'An expansive touchscreen display designed to improve over time',
+      midTitle: <FontAwesomeIcon icon={faWifi} />,
       midText:
         'Over-the-air software updates introduce new features, functionality and performance',
-      bottomTitle: 'Roof',
+      bottomTitle: <FontAwesomeIcon icon={faSolarPanel} />,
       bottomText:
         'An expansive Glass Roof provides more headroom and UV protection',
       position: 'right'
@@ -138,7 +140,33 @@ const pageProps = {
       section: 'Interior',
       title: 'Built Around the Driver',
       text:
-        'The inside of Model 3 is unlike any other car. You can use your smartphone as a key, and access all driver controls in the central 15-inch touchscreen. The all-glass roof extends from front to back, creating a sense of openness from every seat.'
+        'Model X is built to provide the most convenient interior experience ever—with best in class storage, seating for up to seven adults and an expansive 17-inch touchscreen. A seven-seat configuration option comes standard with fold-flat seats for maximum cargo space.'
+    }
+  },
+  exteriorProps: {
+    /* propiedades de exterior section */
+    // heroImg: exteriorHeroImg,
+    specsProps: {
+      invertColor: false,
+      speedometer: false,
+      speedometerOnFirstCell: false,
+      button: false,
+      leftTitle: 'Signature Colors',
+      leftText: 'Customize Model S with signature, multi-layered paint',
+      midTitle: '0.23c',
+      midText:
+        'The most aerodynamic car in its class with the lowest drag coefficient on earth',
+      rightTitle: 'Roof Rack Compatible',
+      rightText:
+        'A standard, expansive Glass Roof provides more headroom and UV protection',
+      borderColor: 'var(--secondary-color)'
+    },
+
+    horizontalAsideProps: {
+      section: 'Exterior',
+      title: 'Designed for Efficiency',
+      text:
+        'Model S was designed for speed and endurance—with incredible aerodynamics, ludicrous performance and uncompromised aesthetics. Automatic door handles auto-present upon approach and withdraw when closed.'
     }
   },
   specsProps: {
