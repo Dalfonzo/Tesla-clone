@@ -3,10 +3,16 @@ import HorizontalSpecs from '../../specs/car-horizontal-specs/HorizontalSpecs';
 
 import classes from './model.module.scss';
 
-const Model = ({ specsProps, title, subtitle, heroImg }) => {
+const Model = ({ specsProps, title, subtitle, heroImg, heroVideo }) => {
+  let renderHero = <img src={heroImg} alt="" />;
+
+  if (heroVideo) {
+    renderHero = <video muted src={heroVideo} autoPlay />;
+  }
+
   return (
     <div className={classes.container}>
-      <img src={heroImg} alt="Hero" />
+      {renderHero}
       <div className={classes.textWrapper}>
         <p className={classes.title}>{title}</p>
         <p className={classes.subTitle}>{subtitle}</p>

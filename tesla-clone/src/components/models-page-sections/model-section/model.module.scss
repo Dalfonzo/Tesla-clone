@@ -21,6 +21,14 @@
     top: -15%;
   }
 
+  video {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .textWrapper {
     position: relative;
     height: fit-content;
