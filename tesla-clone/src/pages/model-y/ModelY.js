@@ -9,7 +9,7 @@ import rangeVideoHero from '../../assets/video/model-y/Model Y - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-y/interior_hero@2.jpg';
 import specsHeroImg from '../../assets/images/model-y/ModelYSilhouette.png';
-import orderHeroImg from '../../assets/images/model-x/order.jpg';
+import orderHeroImg from '../../assets/images/model-y/ModelY_Order_Hero.jpg';
 
 const pageProps = {
   modelProps: {
@@ -173,7 +173,7 @@ const pageProps = {
   orderProps: {
     /* propiedades de order section */
     invertColor: true,
-    title: 'Model X',
+    title: 'Model Y',
     heroImg: orderHeroImg
   }
 };
