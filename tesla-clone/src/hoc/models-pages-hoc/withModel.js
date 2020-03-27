@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Model from '../../components/model-section/Model';
-import Safety from '../../components/safety-section/Safety';
-import Performance from '../../components/performance-section/Performance';
-import Range from '../../components/range-section/Range';
-import Autopilot from '../../components/autopilot-section/Autopilot';
-import Interior from '../../components/interior-section/Interior';
-import Exterior from '../../components/exterior-section/Exterior';
+import Model from '../../components/models-page-sections/model-section/Model';
+import Safety from '../../components/models-page-sections/safety-section/Safety';
+import Performance from '../../components/models-page-sections/performance-section/Performance';
+import Range from '../../components/models-page-sections/range-section/Range';
+import Autopilot from '../../components/models-page-sections/autopilot-section/Autopilot';
+import Interior from '../../components/models-page-sections/interior-section/Interior';
+import Exterior from '../../components/models-page-sections/exterior-section/Exterior';
 import Specs from '../../components/models-page-sections/specs-section/Specs';
-import Order from '../../components/order-section/Order';
+import Order from '../../components/models-page-sections/order-section/Order';
 
 const ModelHoc = ({
   modelProps,

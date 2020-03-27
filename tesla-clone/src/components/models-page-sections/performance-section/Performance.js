@@ -1,6 +1,6 @@
 import React from 'react';
-import HorizontalSpecs from '../car-horizontal-specs/HorizontalSpecs';
-import HorizontalAside from '../horizontal-aside/HorizontalAside';
+import HorizontalSpecs from '../../specs/car-horizontal-specs/HorizontalSpecs';
+import HorizontalAside from '../../asides/horizontal-aside/HorizontalAside';
 import classes from './performance.module.scss';
 
 const Performance = ({

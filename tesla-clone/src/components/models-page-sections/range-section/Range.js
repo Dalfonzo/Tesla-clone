@@ -1,6 +1,6 @@
 import React from 'react';
-import VerticalAside from '../vertical-aside/VerticalAside';
-import HorizontalSpecs from '../car-horizontal-specs/HorizontalSpecs';
+import VerticalAside from '../../asides/vertical-aside/VerticalAside';
+import HorizontalSpecs from '../../specs/car-horizontal-specs/HorizontalSpecs';
 
 import classes from './range.module.scss';
 

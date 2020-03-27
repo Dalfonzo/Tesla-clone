@@ -1,5 +1,5 @@
 import React from 'react';
-import LearnOrderBtn from '../buttons/learn-and-order-together/LearnOrder';
+import LearnOrderBtn from '../../buttons/learn-and-order-together/LearnOrder';
 
 import classes from './horizontalAside.module.scss';
 

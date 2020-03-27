@@ -1,5 +1,5 @@
 import React from 'react';
-import HorizontalSpecs from '../car-horizontal-specs/HorizontalSpecs';
+import HorizontalSpecs from '../../specs/car-horizontal-specs/HorizontalSpecs';
 
 import classes from './model.module.scss';
 

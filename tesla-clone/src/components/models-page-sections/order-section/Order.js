@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../footer/Footer';
+import Footer from '../../general-layout/footer/Footer';
 
 import classes from './order.module.scss';
 

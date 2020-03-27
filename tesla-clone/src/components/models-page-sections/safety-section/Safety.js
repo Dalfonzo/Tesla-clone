@@ -1,6 +1,6 @@
 import React from 'react';
 
-import VerticalAside from '../vertical-aside/VerticalAside';
+import VerticalAside from '../../asides/vertical-aside/VerticalAside';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons';
 

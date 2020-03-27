@@ -8,7 +8,7 @@ import mainHeroImg from '../../assets/images/home/main-hero-homepage-desktop.jpg
 import energyHeroImg from '../../assets/images/home/homepage-energy-hero-desktop.jpg';
 import modelYHeroImg from '../../assets/images/home/tesla-model-1855169.jpg';
 import videoHero from '../../assets/video/home/accessories-hero-desktop.mp4';
-import Footer from '../../components/footer/Footer';
+import Footer from '../../components/general-layout/footer/Footer';
 
 import classes from './home.module.scss';
 

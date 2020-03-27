@@ -1,7 +1,7 @@
 import React from 'react';
 
-import HorizontalAside from '../horizontal-aside/HorizontalAside';
-import HorizontalSpecs from '../car-horizontal-specs/HorizontalSpecs';
+import HorizontalAside from '../../asides/horizontal-aside/HorizontalAside';
+import HorizontalSpecs from '../../specs/car-horizontal-specs/HorizontalSpecs';
 import classes from './exterior.module.scss';
 
 const Exterior = ({ specsProps, horizontalAsideProps, heroImg }) => {

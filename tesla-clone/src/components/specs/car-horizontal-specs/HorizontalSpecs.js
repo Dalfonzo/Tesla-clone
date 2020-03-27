@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './horizontalSpec.module.scss';
 
-import Speedometer from '../speedometer/Speedometer';
-import OrderNowBtn from '../buttons/order-now/OrderNowBtn.js';
+import Speedometer from '../../speedometer/Speedometer';
+import OrderNowBtn from '../../buttons/order-now/OrderNowBtn.js';
 
 const HorizontalSpecs = props => {
   let changeColor = null;

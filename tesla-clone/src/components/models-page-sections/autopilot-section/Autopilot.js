@@ -1,6 +1,6 @@
 import React from 'react';
-import HorizontalAside from '../horizontal-aside/HorizontalAside';
-import VerticalSpecs from '../car-vertical-specs/VerticalSpecs';
+import HorizontalAside from '../../asides/horizontal-aside/HorizontalAside';
+import VerticalSpecs from '../../specs/car-vertical-specs/VerticalSpecs';
 
 import classes from './autopilot.module.scss';
 

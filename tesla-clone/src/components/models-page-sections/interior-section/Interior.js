@@ -1,7 +1,7 @@
 import React from 'react';
 
-import VerticalSpecs from '../car-vertical-specs/VerticalSpecs';
-import HorizontalAside from '../horizontal-aside/HorizontalAside';
+import VerticalSpecs from '../../specs/car-vertical-specs/VerticalSpecs';
+import HorizontalAside from '../../asides/horizontal-aside/HorizontalAside';
 
 import classes from './interior.module.scss';
 
