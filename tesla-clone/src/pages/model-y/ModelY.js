@@ -7,7 +7,7 @@ import modelHeroImg from '../../assets/images/model-y/model.jpg';
 import safetyHeroImg from '../../assets/images/model-y/safety.png';
 import rangeVideoHero from '../../assets/video/model-y/Model Y - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
-import interiorHeroImg from '../../assets/images/model-x/hero@2_3.jpg';
+import interiorHeroImg from '../../assets/images/model-y/interior_hero@2.jpg';
 import exteriorHeroImg from '../../assets/images/model-x/exterior.jpg';
 import specsHeroImg from '../../assets/images/model-x/MX-specs-desktop.jpg';
 import orderHeroImg from '../../assets/images/model-x/order.jpg';
@@ -97,8 +97,8 @@ const pageProps = {
     heroVideo: null,
     verticalSpecsProps: {
       invertColor: true,
-      topTitle: '17inch',
-      topText: 'An expansive touchscreen display designed to improve over time',
+      topTitle: '15 inch',
+      topText: 'A touchscreen display designed to improve over time',
       midTitle: <FontAwesomeIcon icon={faWifi} />,
       midText:
         'Over-the-air software updates introduce new features, functionality and performance',
@@ -111,7 +111,7 @@ const pageProps = {
       section: 'Interior',
       title: 'Built Around the Driver',
       text:
-        'Model X is built to provide the most convenient interior experience ever—with best in class storage, seating for up to seven adults and an expansive 17-inch touchscreen. A seven-seat configuration option comes standard with fold-flat seats for maximum cargo space.'
+        'With an elevated seating position and low dash, the driver has a commanding view of the road ahead. The interior of Model Y is simple and clean, with a 15-inch touch screen, immersive sound system and an expansive all-glass roof that creates extra headroom and provides a seamless view of the sky.'
     }
   },
   exteriorProps: {
