@@ -9,6 +9,7 @@ import performanceHeroImg from '../../assets/images/model-x/performance-hero@2.j
 import rangeVideoHero from '../../assets/video/model-x/Model X - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-x/hero@2_3.jpg';
+import exteriorHeroImg from '../../assets/images/model-x/exterior.jpg';
 import specsHeroImg from '../../assets/images/model-3/top@2.png';
 import orderHeroImg from '../../assets/images/model-3/Desktop_Model3_Order_102719.png';
 
@@ -145,28 +146,26 @@ const pageProps = {
   },
   exteriorProps: {
     /* propiedades de exterior section */
-    // heroImg: exteriorHeroImg,
+    heroImg: exteriorHeroImg,
     specsProps: {
       invertColor: false,
       speedometer: false,
       speedometerOnFirstCell: false,
       button: false,
       leftTitle: 'Signature Colors',
-      leftText: 'Customize Model S with signature, multi-layered paint',
+      leftText: 'Customize Model X with signature, multi-layered paint',
       midTitle: '0.23c',
       midText:
         'The most aerodynamic car in its class with the lowest drag coefficient on earth',
-      rightTitle: 'Roof Rack Compatible',
-      rightText:
-        'A standard, expansive Glass Roof provides more headroom and UV protection',
-      borderColor: 'var(--secondary-color)'
+      rightTitle: 'Falcon Wing Doors',
+      rightText: 'Enhanced accessibility to the second and third rows'
     },
 
     horizontalAsideProps: {
       section: 'Exterior',
       title: 'Designed for Efficiency',
       text:
-        'Model S was designed for speed and endurance—with incredible aerodynamics, ludicrous performance and uncompromised aesthetics. Automatic door handles auto-present upon approach and withdraw when closed.'
+        'Model X is built for efficiency—with an uncompromised design, allowing for industry-leading range, performance and utility. A spoiler provides incredible aerodynamics and the lowest drag coefficient of any vehicle in its class.'
     }
   },
   specsProps: {
