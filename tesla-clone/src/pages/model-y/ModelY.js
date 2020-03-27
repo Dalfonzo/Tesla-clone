@@ -5,8 +5,7 @@ import { faWifi, faSolarPanel } from '@fortawesome/free-solid-svg-icons';
 
 import modelHeroImg from '../../assets/images/model-y/model.jpg';
 import safetyHeroImg from '../../assets/images/model-y/safety.png';
-import performanceHeroImg from '../../assets/images/model-x/performance-hero@2.jpg';
-import rangeVideoHero from '../../assets/video/model-x/Model X - range.mp4';
+import rangeVideoHero from '../../assets/video/model-y/Model Y - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-x/hero@2_3.jpg';
 import exteriorHeroImg from '../../assets/images/model-x/exterior.jpg';
@@ -54,18 +53,17 @@ const pageProps = {
       section: 'Range',
       title: 'Go Anywhere',
       text:
-        'Model X can get you anywhere you want to go—with industry-leading range and convenient charging options, all over the world.'
+        'Model Y is fully electric, so you never need to visit a gas station again. If you charge overnight at home, you can wake up to a full battery every morning. And when you’re on the road, it’s easy to plug in along the way—at any public station or with the Tesla charging network. We currently have over 16,000 Superchargers worldwide, with six new locations opening every week.'
     },
     specsProps: {
       invertColor: true,
       speedometerOnFirstCell: false,
       button: false,
       speedometer: false,
-      leftTitle: '351mi',
-      leftText: 'Go anywhere with up to 351 miles of range on a single charge',
+      leftTitle: '316mi',
+      leftText: 'Go anywhere with up to 316 miles of range on a single charge',
       midTitle: '15 min',
-      midText:
-        'Recharge up to 123 miles in 15 minutes at any Supercharger location',
+      midText: 'Recharge 158 miles in 15 minutes at Supercharger locations',
       rightTitle: '16,000+',
       rightText:
         'Superchargers placed along well-traveled routes around the world'
