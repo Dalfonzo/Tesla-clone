@@ -6,6 +6,7 @@ import Home from '../pages/home/Home';
 import ModelS from '../pages/model-s/ModelS';
 import Model3 from '../pages/model-3/Model3';
 import ModelX from '../pages/model-x/ModelX';
+import ModelY from '../pages/model-y/ModelY';
 
 const App = () => {
   return (
@@ -22,6 +23,9 @@ const App = () => {
       </Route>
       <Route exact path="/modelx">
         <ModelX />
+      </Route>
+      <Route exact path="/modely">
+        <ModelY />
       </Route>
     </div>
   );

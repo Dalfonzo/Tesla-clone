@@ -3,7 +3,7 @@ import WithModel from '../../hoc/models-pages-hoc/withModel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWifi, faSolarPanel } from '@fortawesome/free-solid-svg-icons';
 
-import modelHeroVideo from '../../assets/video/model-x/Model X - model.mp4';
+import modelHeroImg from '../../assets/images/model-y/model.jpg';
 import safetyHeroImg from '../../assets/images/model-x/safety-model-x-hero.png';
 import performanceHeroImg from '../../assets/images/model-x/performance-hero@2.jpg';
 import rangeVideoHero from '../../assets/video/model-x/Model X - range.mp4';
@@ -17,18 +17,18 @@ const pageProps = {
   modelProps: {
     /* propiedades de model section */
     title: 'Tesla',
-    subtitle: 'Model X',
-    heroVideo: modelHeroVideo,
+    subtitle: 'Model Y',
+    heroImg: modelHeroImg,
     specsProps: {
       speedometerOnFirstCell: true,
       button: true,
       speedometer: true,
-      leftTitle: '3.2s',
+      leftTitle: '3.0s',
       leftText: 'From 0-60 mph',
-      midTitle: `★★★★★`,
-      midText: '5-Star Safety',
-      rightTitle: '351mi',
-      rightText: 'Range(EPA est.)',
+      midTitle: `68cu ft`,
+      midText: 'Cargo Space',
+      rightTitle: 'AWD',
+      rightText: 'Dual Motor',
       invertColor: true
     }
   },
@@ -230,9 +230,8 @@ const pageProps = {
     heroImg: orderHeroImg
   }
 };
-
-const ModelX = () => {
+const ModelY = () => {
   return <WithModel {...pageProps} />;
 };
 
-export default ModelX;
+export default ModelY;
