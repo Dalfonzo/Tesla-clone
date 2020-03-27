@@ -10,8 +10,8 @@ import rangeVideoHero from '../../assets/video/model-x/Model X - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-x/hero@2_3.jpg';
 import exteriorHeroImg from '../../assets/images/model-x/exterior.jpg';
-import specsHeroImg from '../../assets/images/model-3/top@2.png';
-import orderHeroImg from '../../assets/images/model-3/Desktop_Model3_Order_102719.png';
+import specsHeroImg from '../../assets/images/model-x/MX-specs-desktop.jpg';
+import orderHeroImg from '../../assets/images/model-x/order.jpg';
 
 import classes from './modelx.module.scss';
 
@@ -171,7 +171,7 @@ const pageProps = {
   specsProps: {
     /* propiedades de specs section */
     heroImg: specsHeroImg,
-    title: 'Model 3',
+    title: 'Model X',
     leftList: [
       {
         title: 'Battery',
@@ -191,29 +191,29 @@ const pageProps = {
       },
       {
         title: 'Seating',
-        text: '5 Adults'
+        text: 'Up to 7 Adults'
       },
       {
         title: 'Wheels',
-        text: '18"'
+        text: '20” or 22”'
       }
     ],
     rightList: [
       {
         title: 'Weight',
-        text: '4,036 lbs'
+        text: '5,531 lbs'
       },
       {
         title: 'Cargo',
-        text: '15 cu ft'
+        text: '88 cu ft'
       },
       {
         title: 'Displays',
-        text: '15" Center Touchscreen'
+        text: 'Driver Display + 17" Touchscreen'
       },
       {
         title: 'Supercharging Max/ Payment Type',
-        text: '250 kW max; Pay Per Use'
+        text: '200 kW max; Free Supercharging'
       },
       {
         title: 'Onboard Charger Max',
@@ -221,15 +221,14 @@ const pageProps = {
       },
       {
         title: 'Warranty',
-        text:
-          'Basic Vehicle - 4 years or 50,000 mi, whichever comes first Battery & Drive Unit - 8 years or 120,000 mi, whichever comes first'
+        text: 'Basic Vehicle - 4 years or 50,000 miles, whichever comes first'
       }
     ]
   },
   orderProps: {
     /* propiedades de order section */
-    invertColor: true,
-    title: 'Experience Model 3',
+    invertColor: false,
+    title: 'Model X',
     heroImg: orderHeroImg
   }
 };
