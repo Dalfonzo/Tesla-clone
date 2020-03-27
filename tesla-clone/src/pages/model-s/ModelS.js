@@ -148,6 +148,7 @@ const ModelS = () => {
       /* propiedades de exterior section */
       heroImg: exteriorHeroImg,
       specsProps: {
+        invertColor: false,
         speedometer: false,
         speedometerOnFirstCell: false,
         button: false,
@@ -159,8 +160,7 @@ const ModelS = () => {
         rightTitle: 'Roof Rack Compatible',
         rightText:
           'A standard, expansive Glass Roof provides more headroom and UV protection',
-        borderColor: 'var(--secondary-color)',
-        invertColor: false
+        borderColor: 'var(--secondary-color)'
       },
 
       horizontalAsideProps: {
