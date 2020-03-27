@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWifi, faSolarPanel } from '@fortawesome/free-solid-svg-icons';
 
 import modelHeroImg from '../../assets/images/model-y/model.jpg';
-import safetyHeroImg from '../../assets/images/model-x/safety-model-x-hero.png';
+import safetyHeroImg from '../../assets/images/model-y/safety.png';
 import performanceHeroImg from '../../assets/images/model-x/performance-hero@2.jpg';
 import rangeVideoHero from '../../assets/video/model-x/Model X - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
@@ -37,40 +37,14 @@ const pageProps = {
     heroImg: safetyHeroImg,
     verticalAsideProps: {
       section: 'Safety',
-      title: 'The Safest SUV',
+      title: 'Designed for Safety',
       text:
-        'Model X is one of the safest SUVs ever. Built from the ground up as an electric vehicle, the body, chassis, restraints and battery technology provide a very low probability of occupant injury.'
+        'Like every Tesla, Model Y is designed to be the safest vehicle in its class. The low center of gravity, rigid body structure and large crumple zones provide unparalleled protection.'
     },
     carParts: {
-      partOne: 'Front-Impact Protection',
-      partTwo: 'Side-Impact Protection',
-      partThree: 'Very Low Rollover Risk'
-    }
-  },
-  performanceProps: {
-    /* propiedades de performance section */
-    heroImg: performanceHeroImg,
-    heroVideo: null,
-    specsProps: {
-      invertColor: true,
-      speedometer: true,
-      speedometerOnFirstCell: false,
-      button: false,
-      leftTitle: 'AWD',
-      leftText:
-        'Dual Motor All-Wheel Drive instantly controls traction and torque, in all weather conditions',
-      midTitle: '3.2s',
-      midText:
-        'The quickest SUV on earth—from zero to 60 mph in as little as 3.2 seconds',
-      rightTitle: '★★★★★',
-      rightText:
-        'The highest safety ratings ever, with the lowest probability of occupant injury'
-    },
-    horizontalAsideProps: {
-      section: 'Performance',
-      title: 'The Quickest SUV',
-      text:
-        'Tesla’s all-electric powertrain delivers unparalleled performance in all weather conditions, with Dual Motor All-Wheel Drive, adaptive air suspension and the quickest acceleration of any SUV on the road—from zero to 60 mph in 3.2 seconds.'
+      partOne: 'Impact Protection',
+      partTwo: 'Rigid Structure',
+      partThree: 'Low Center of Gravity'
     }
   },
   rangeProps: {
