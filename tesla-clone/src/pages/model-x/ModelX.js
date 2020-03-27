@@ -4,7 +4,7 @@ import WithModel from '../../hoc/models-pages-hoc/withModel';
 import modelHeroVideo from '../../assets/video/model-x/Model X - model.mp4';
 import safetyHeroImg from '../../assets/images/model-x/safety-model-x-hero.png';
 import performanceHeroImg from '../../assets/images/model-x/performance-hero@2.jpg';
-import rangeVideoHero from '../../assets/video/model-3/Model 3 -range.mp4';
+import rangeVideoHero from '../../assets/video/model-x/Model X - range.mp4';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroVideo from '../../assets/video/model-3/Model 3 - interior.mp4';
 import specsHeroImg from '../../assets/images/model-3/top@2.png';
@@ -86,10 +86,11 @@ const pageProps = {
       speedometerOnFirstCell: false,
       button: false,
       speedometer: false,
-      leftTitle: '322mi',
-      leftText: 'Go anywhere with up to 322 mi of range on a single charge',
+      leftTitle: '351mi',
+      leftText: 'Go anywhere with up to 351 miles of range on a single charge',
       midTitle: '15 min',
-      midText: 'Recharge up to 172 mi in 15 minutes at Supercharger locations',
+      midText:
+        'Recharge up to 123 miles in 15 minutes at any Supercharger location',
       rightTitle: '16,000+',
       rightText:
         'Superchargers placed along well-traveled routes around the world'
