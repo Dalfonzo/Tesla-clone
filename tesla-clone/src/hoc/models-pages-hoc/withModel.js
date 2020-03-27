@@ -7,7 +7,7 @@ import Range from '../../components/range-section/Range';
 import Autopilot from '../../components/autopilot-section/Autopilot';
 import Interior from '../../components/interior-section/Interior';
 import Exterior from '../../components/exterior-section/Exterior';
-import Specs from '../../components/specs-section/Specs';
+import Specs from '../../components/models-page-sections/specs-section/Specs';
 import Order from '../../components/order-section/Order';
 
 const ModelHoc = ({
