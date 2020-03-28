@@ -1,7 +1,5 @@
 import React from 'react';
 import WithModel from '../../hoc/models-pages-hoc/withModel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWifi, faSolarPanel } from '@fortawesome/free-solid-svg-icons';
 
 import modelHeroVideo from '../../assets/video/model-x/Model X - model.mp4';
 import safetyHeroImg from '../../assets/images/model-x/safety-model-x-hero.png';
@@ -12,6 +10,14 @@ import interiorHeroImg from '../../assets/images/model-x/hero@2_3.jpg';
 import exteriorHeroImg from '../../assets/images/model-x/exterior.jpg';
 import specsHeroImg from '../../assets/images/model-x/MX-specs-desktop.jpg';
 import orderHeroImg from '../../assets/images/model-x/order.jpg';
+/* ICONS */
+import { ReactComponent as WifiIcon } from '../../assets/svg/wifi_0.svg';
+import { ReactComponent as RoofCarIcon } from '../../assets/svg/MS_roof.svg';
+import { ReactComponent as Seats } from '../../assets/svg/MX_room-for-7-white.svg';
+import { ReactComponent as SigColors } from '../../assets/svg/signature-colors.svg';
+import { ReactComponent as FalconWings } from '../../assets/svg/MX_falcon-wings.svg';
+
+import Icon from '../../components/icon/Icon';
 
 const pageProps = {
   modelProps: {
@@ -22,9 +28,13 @@ const pageProps = {
     specsProps: {
       speedometerOnFirstCell: true,
       button: true,
-      speedometer: true,
-      leftTitle: '3.2s',
-      leftText: 'From 0-60 mph',
+      speedometer: false,
+      leftTitle: (
+        <Icon text={'7'}>
+          <Seats />
+        </Icon>
+      ),
+      leftText: 'Room for Seven',
       midTitle: `★★★★★`,
       midText: '5-Star Safety',
       rightTitle: '351mi',
@@ -127,10 +137,10 @@ const pageProps = {
       invertColor: true,
       topTitle: '17inch',
       topText: 'An expansive touchscreen display designed to improve over time',
-      midTitle: <FontAwesomeIcon icon={faWifi} />,
+      midTitle: <WifiIcon />,
       midText:
         'Over-the-air software updates introduce new features, functionality and performance',
-      bottomTitle: <FontAwesomeIcon icon={faSolarPanel} />,
+      bottomTitle: <RoofCarIcon />,
       bottomText:
         'An expansive Glass Roof provides more headroom and UV protection',
       position: 'right'
@@ -150,12 +160,20 @@ const pageProps = {
       speedometer: false,
       speedometerOnFirstCell: false,
       button: false,
-      leftTitle: 'Signature Colors',
+      leftTitle: (
+        <Icon text={'Signature Colors'}>
+          <SigColors />
+        </Icon>
+      ),
       leftText: 'Customize Model X with signature, multi-layered paint',
       midTitle: '0.23c',
       midText:
         'The most aerodynamic car in its class with the lowest drag coefficient on earth',
-      rightTitle: 'Falcon Wing Doors',
+      rightTitle: (
+        <Icon text={'Falcon WingDoors'}>
+          <FalconWings />
+        </Icon>
+      ),
       rightText: 'Enhanced accessibility to the second and third rows'
     },
 

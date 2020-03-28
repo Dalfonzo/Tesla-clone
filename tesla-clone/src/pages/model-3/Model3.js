@@ -12,7 +12,6 @@ import orderHeroImg from '../../assets/images/model-3/Desktop_Model3_Order_10271
 /* ICONS */
 import { ReactComponent as WifiIcon } from '../../assets/svg/wifi_0.svg';
 import { ReactComponent as RoofCarIcon } from '../../assets/svg/MS_roof.svg';
-import { ReactComponent as SigColors } from '../../assets/svg/signature-colors.svg';
 import Icon from '../../components/icon/Icon';
 
 const pageProps = {
