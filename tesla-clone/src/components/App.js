@@ -7,6 +7,7 @@ import ModelS from '../pages/model-s/ModelS';
 import Model3 from '../pages/model-3/Model3';
 import ModelX from '../pages/model-x/ModelX';
 import ModelY from '../pages/model-y/ModelY';
+import SolarRoof from '../pages/solar-roof/SolarRoof';
 
 const App = () => {
   return (
@@ -26,6 +27,9 @@ const App = () => {
       </Route>
       <Route exact path="/modely">
         <ModelY />
+      </Route>
+      <Route exact path="/solarroof">
+        <SolarRoof />
       </Route>
     </div>
   );
