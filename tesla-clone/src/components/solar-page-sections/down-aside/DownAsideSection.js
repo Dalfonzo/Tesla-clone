@@ -1,15 +1,9 @@
 import React from 'react';
-import HorizontalSpecs from '../../specs/car-horizontal-specs/HorizontalSpecs';
 import HorizontalAside from '../../asides/horizontal-aside/HorizontalAside';
 
 import classes from './downAsideSection.module.scss';
 
-const DownAsideSection = ({
-  specsProps,
-  horizontalAsideProps,
-  heroImg,
-  heroVideo
-}) => {
+const DownAsideSection = ({ horizontalAsideProps, heroImg, heroVideo }) => {
   let renderHero = <img src={heroImg} alt="" />;
 
   if (heroVideo) {

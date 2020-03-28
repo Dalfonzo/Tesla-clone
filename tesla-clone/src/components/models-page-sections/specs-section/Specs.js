@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import classes from './specs.module.scss';
 
 const Specs = ({ title, leftList, rightList, heroImg }) => {
-  const [active, setActive] = useState('PERFORMANCE'); //pendiente
-
   const renderList = arr => {
     return arr.map(el => (
-      <li>
+      <li key={el.title}>
         <span>{el.title}</span>
         {el.text}
       </li>
@@ -24,8 +22,8 @@ const Specs = ({ title, leftList, rightList, heroImg }) => {
           <span>{title}</span> Specs
         </p>
         <div className={classes.buttonsContainer}>
-          <button onClick={() => setActive('PERFORMANCE')}>performance</button>
-          <button onClick={() => setActive('LRPLUS')}>long range plus</button>
+          <button>performance</button>
+          <button>long range plus</button>
         </div>
         <div className={classes.listWrapper}>
           <ul className={classes.leftList}>{renderList(leftList)}</ul>

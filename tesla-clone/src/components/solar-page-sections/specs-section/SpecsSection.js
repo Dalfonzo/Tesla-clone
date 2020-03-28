@@ -4,7 +4,7 @@ import classes from './specsSection.module.scss';
 const SpecsSection = ({ title, leftList, rightList, heroImg }) => {
   const renderList = arr => {
     return arr.map(el => (
-      <li>
+      <li key={el.title}>
         <span>{el.title}</span>
         {el.text}
       </li>

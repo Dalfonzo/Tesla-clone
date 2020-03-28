@@ -16,10 +16,10 @@ const Header = () => {
 
   return (
     <div className={classes.container}>
-      <div className={classes.logo} />
+      <Link to="/" className={classes.logo} />
       <ul className={classes.models}>
         {links.map(link => (
-          <Link to={link.path} className={classes.links}>
+          <Link to={link.path} className={classes.links} key={link.path}>
             <li>{link.title}</li>
           </Link>
         ))}
