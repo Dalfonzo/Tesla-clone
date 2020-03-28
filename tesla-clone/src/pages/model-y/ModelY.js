@@ -1,7 +1,5 @@
 import React from 'react';
 import WithModel from '../../hoc/models-pages-hoc/withModel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWifi, faSolarPanel } from '@fortawesome/free-solid-svg-icons';
 
 import modelHeroImg from '../../assets/images/model-y/model.jpg';
 import safetyHeroImg from '../../assets/images/model-y/safety.png';
@@ -10,6 +8,9 @@ import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-y/interior_hero@2.jpg';
 import specsHeroImg from '../../assets/images/model-y/ModelYSilhouette.png';
 import orderHeroImg from '../../assets/images/model-y/ModelY_Order_Hero.jpg';
+/* ICONS */
+import { ReactComponent as WifiIcon } from '../../assets/svg/wifi_0.svg';
+import { ReactComponent as RoofCarIcon } from '../../assets/svg/MS_roof.svg';
 
 const pageProps = {
   modelProps: {
@@ -20,9 +21,9 @@ const pageProps = {
     specsProps: {
       speedometerOnFirstCell: true,
       button: true,
-      speedometer: true,
-      leftTitle: '3.0s',
-      leftText: 'From 0-60 mph',
+      speedometer: false,
+      leftTitle: '316mi',
+      leftText: 'Range (EPA est.)',
       midTitle: `68cu ft`,
       midText: 'Cargo Space',
       rightTitle: 'AWD',
@@ -98,10 +99,10 @@ const pageProps = {
       invertColor: true,
       topTitle: '15 inch',
       topText: 'A touchscreen display designed to improve over time',
-      midTitle: <FontAwesomeIcon icon={faWifi} />,
+      midTitle: <WifiIcon />,
       midText:
         'Over-the-air software updates introduce new features, functionality and performance',
-      bottomTitle: <FontAwesomeIcon icon={faSolarPanel} />,
+      bottomTitle: <RoofCarIcon />,
       bottomText:
         'An expansive Glass Roof provides more headroom and UV protection',
       position: 'right'
