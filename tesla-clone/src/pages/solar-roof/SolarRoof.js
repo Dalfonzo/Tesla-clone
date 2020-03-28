@@ -15,6 +15,10 @@ import costHeroImg from '../../assets/images/solar-roof/D_coe_hero-2880x1800.jpg
 import installationHeroImg from '../../assets/images/solar-roof/D_install_hero-2090x1800.jpg';
 import experienceHeroImg from '../../assets/images/solar-roof/D_app_hero-2090x1800.jpg';
 import specsHeroImg from '../../assets/images/solar-roof/PanelMeasure_desktop2x.png';
+/* ICONS */
+import { ReactComponent as Solar } from '../../assets/svg/icon.solar_.svg';
+
+import Icon from '../../components/icon/Icon';
 
 const SolarRoof = () => {
   const heroProps = {
@@ -25,7 +29,7 @@ const SolarRoof = () => {
     specsProps: {
       invertColor: true,
       button: true,
-      leftTitle: 'Sun',
+      leftTitle: <Solar />,
       leftText: 'Beautiful Solar No Compromise',
       midTitle: '3X',
       midText: 'Stronger Than Standard Roofing Tiles',

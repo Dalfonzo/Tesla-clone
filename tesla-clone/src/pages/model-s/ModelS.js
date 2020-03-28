@@ -15,8 +15,6 @@ import { ReactComponent as RoofCarIcon } from '../../assets/svg/MS_roof.svg';
 import { ReactComponent as SigColors } from '../../assets/svg/signature-colors.svg';
 import Icon from '../../components/icon/Icon';
 
-import classes from './models.module.scss';
-
 const ModelS = () => {
   const pageProps = {
     modelProps: {
@@ -224,7 +222,7 @@ const ModelS = () => {
   };
 
   return (
-    <div className={classes.container}>
+    <div>
       <WithModel {...pageProps} />
     </div>
   );
