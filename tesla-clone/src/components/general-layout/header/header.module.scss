@@ -50,3 +50,17 @@
     @include text-hover;
   }
 }
+.links {
+  text-decoration: none;
+  color: currentColor;
+
+  & > li {
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+
+  & > li:hover {
+    cursor: pointer;
+    color: var(--hover-color);
+  }
+}

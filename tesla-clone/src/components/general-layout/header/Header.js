@@ -1,20 +1,28 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import classes from './header.module.scss';
 
 const Header = () => {
+  const links = [
+    { title: 'MODEL S', path: '/models' },
+    { title: 'MODEL 3', path: '/model3' },
+    { title: 'MODEL X', path: '/modelx' },
+    { title: 'MODEL Y', path: '/modely' },
+    { title: 'SOLAR ROOF', path: '/solarroof' }
+  ];
+
   return (
     <div className={classes.container}>
       <div className={classes.logo} />
       <ul className={classes.models}>
-        <li>MODEL S</li>
-        <li>MODEL 3</li>
-        <li>MODEL X</li>
-        <li>MODEL Y</li>
-        <li>SOLAR ROOF</li>
+        {links.map(link => (
+          <Link to={link.path} className={classes.links}>
+            <li>{link.title}</li>
+          </Link>
+        ))}
       </ul>
       <ul className={classes.menu}>
         <li>SIGN IN</li>
