@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Hero from '../../components/solar-page-sections/hero-section/HeroSection';
 import Desing from '../../components/solar-page-sections/left-aside/LeftAsideSection';
 import Installation from '../../components/solar-page-sections/left-aside/LeftAsideSection';
 import Experience from '../../components/solar-page-sections/right-aside/RighAsideSection';
@@ -7,6 +8,7 @@ import Cost from '../../components/solar-page-sections/down-aside/DownAsideSecti
 import Specs from '../../components/solar-page-sections/specs-section/SpecsSection';
 import Order from '../../components/solar-page-sections/order-section/OrderSection';
 
+import heroHeroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
 import designHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 import installationHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 import rangeVideoHero from '../../assets/video/model-s/range.mp4';
@@ -14,6 +16,23 @@ import performanceHeroImg from '../../assets/images/model-s/model-s-performance.
 import specsHeroImg from '../../assets/images/model-s/MS-specs-desktop.jpg';
 
 const SolarRoof = () => {
+  const heroProps = {
+    /* propiedades de model section */
+    title: 'Tesla',
+    subtitle: 'Model S',
+    heroImg: heroHeroImg,
+    specsProps: {
+      speedometerOnFirstCell: true,
+      button: true,
+      speedometer: true,
+      leftTitle: '2.4s',
+      leftText: 'From 0-60 mph',
+      midTitle: '28 cu ft',
+      midText: 'Best in Class Storage',
+      rightTitle: '391 mi',
+      rightText: 'Range (Est.)'
+    }
+  };
   const designProps = {
     /* propiedades de safety section */
     heroImg: designHeroImg,
@@ -118,6 +137,7 @@ const SolarRoof = () => {
 
   return (
     <div>
+      <Hero {...heroProps} />
       <Desing {...designProps} />
       <Installation {...installationProps} />
       <Experience {...experienceProps} />

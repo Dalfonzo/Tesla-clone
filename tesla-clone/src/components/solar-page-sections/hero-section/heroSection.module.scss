@@ -1,0 +1,50 @@
+@mixin containerProps {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+@mixin fontProps {
+  z-index: 10;
+  color: var(--primary-color);
+}
+
+.container {
+  @include containerProps;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  img {
+    position: absolute;
+    width: 100%;
+    top: -15%;
+  }
+
+  video {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .textWrapper {
+    position: relative;
+    height: fit-content;
+    top: 15%;
+
+    & > * {
+      @include fontProps;
+      text-align: center;
+    }
+
+    .title {
+      font-size: var(--medium-font-size);
+    }
+    .subTitle {
+      padding: 0.6rem 0;
+      font-size: var(--big-font-size);
+    }
+  }
+}
