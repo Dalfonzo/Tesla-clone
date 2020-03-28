@@ -2,18 +2,19 @@ import React from 'react';
 
 import Hero from '../../components/solar-page-sections/hero-section/HeroSection';
 import Desing from '../../components/solar-page-sections/left-aside/LeftAsideSection';
+import Cost from '../../components/solar-page-sections/down-aside/DownAsideSection';
+
 import Installation from '../../components/solar-page-sections/left-aside/LeftAsideSection';
 import Experience from '../../components/solar-page-sections/right-aside/RighAsideSection';
-import Cost from '../../components/solar-page-sections/down-aside/DownAsideSection';
 import Specs from '../../components/solar-page-sections/specs-section/SpecsSection';
 import Order from '../../components/solar-page-sections/order-section/OrderSection';
 
-import heroHeroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
-import designHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
-import installationHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
-import rangeVideoHero from '../../assets/video/model-s/range.mp4';
-import performanceHeroImg from '../../assets/images/model-s/model-s-performance.jpg';
-import specsHeroImg from '../../assets/images/model-s/MS-specs-desktop.jpg';
+import heroHeroImg from '../../assets/images/solar-roof/Solar_Roof_Hero_2880x1800.jpg';
+import designHeroImg from '../../assets/images/solar-roof/V3_Roof-Front_Exploded03.png';
+import costHeroImg from '../../assets/images/solar-roof/D_coe_hero-2880x1800.jpg';
+import installationHeroImg from '../../assets/images/solar-roof/D_install_hero-2090x1800.jpg';
+import experienceHeroImg from '../../assets/images/solar-roof/D_app_hero-2090x1800.jpg';
+import specsHeroImg from '../../assets/images/solar-roof/PanelMeasure_desktop2x.png';
 
 const SolarRoof = () => {
   const heroProps = {
@@ -22,126 +23,106 @@ const SolarRoof = () => {
     subtitle: 'Model S',
     heroImg: heroHeroImg,
     specsProps: {
-      speedometerOnFirstCell: true,
+      invertColor: true,
       button: true,
-      speedometer: true,
-      leftTitle: '2.4s',
-      leftText: 'From 0-60 mph',
-      midTitle: '28 cu ft',
-      midText: 'Best in Class Storage',
-      rightTitle: '391 mi',
-      rightText: 'Range (Est.)'
+      leftTitle: 'Sun',
+      leftText: 'Beautiful Solar No Compromise',
+      midTitle: '3X',
+      midText: 'Stronger Than Standard Roofing Tiles',
+      rightTitle: '24/7',
+      rightText: 'Energy Monitoring'
     }
   };
   const designProps = {
     /* propiedades de safety section */
     heroImg: designHeroImg,
     verticalAsideProps: {
-      section: 'Safety',
-      title: 'High Impact Protection',
+      section: 'Design',
+      title: 'Function and Form',
       text:
-        'Model S is built from the ground up as an electric vehicle, with high-strength architecture and a floor-mounted battery pack allowing for incredible impact protection.'
+        'Solar Roof replaces your existing roof and brings it to life with beautiful solar tiles that can power your home for decades with the energy you produce.'
+    }
+  };
+  const costProps = {
+    /* propiedades de performance section */
+    heroImg: costHeroImg,
+    horizontalAsideProps: {
+      section: 'Cost of Ownership',
+      title: 'Best Value',
+      text:
+        'Solar Roof provides the lowest cost per watt of any national solar panel provider and is comparable in price to a typical roof with solar panels.'
     }
   };
   const installationProps = {
     /* propiedades de safety section */
     heroImg: installationHeroImg,
     verticalAsideProps: {
-      section: 'Safety',
-      title: 'High Impact Protection',
+      section: 'Installation',
+      title: 'Peace of Mind',
       text:
-        'Model S is built from the ground up as an electric vehicle, with high-strength architecture and a floor-mounted battery pack allowing for incredible impact protection.'
+        'Order your Solar Roof today and we’ll take care of the rest. We’ll complete a remote home assessment, custom design, permitting and installation so you can start producing clean energy in no time.'
     }
   };
   const experienceProps = {
     /* propiedades de range section */
-    videoHero: rangeVideoHero, //PENDIENTEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE<--------------------------
+    heroImg: experienceHeroImg,
     verticalAsideProps: {
-      section: 'Range',
-      title: 'Go Anywhere',
+      section: 'Experience',
+      title: '24/7 Monitoring',
       text:
-        'Model S can get you anywhere you want to go—with industry-leading range and convenient charging options, all over the world.'
+        'Manage your solar system and home energy consumption anytime from anywhere in the world with your Tesla app. Watch your consumption rise and fall in real time, including historical usage.'
     }
   };
-  const costProps = {
-    /* propiedades de performance section */
-    heroImg: performanceHeroImg,
-    horizontalAsideProps: {
-      section: 'Performance',
-      title: 'Quickest Acceleration',
-      text:
-        'Model S sets an industry standard for performance and safety. Tesla’s all-electric powertrain delivers unparalleled performance in all weather conditions – with Dual Motor All-Wheel Drive, adaptive air suspension and ludicrous acceleration.'
-    }
-  };
+
   const specsProps = {
     /* propiedades de specs section */
     heroImg: specsHeroImg,
-    title: 'Model S',
+    title: 'Solar Roof',
     leftList: [
       {
-        title: 'Battery',
-        text: 'Long Range'
+        title: 'Tile Warranty',
+        text: '25 years'
       },
       {
-        title: 'Acceleration',
-        text: '2.4 seconds 0-60 mph'
+        title: 'Power Warranty',
+        text: '25 years'
       },
       {
-        title: 'Range',
-        text: '348 miles (EPA est.)'
+        title: 'Weatherization Warranty',
+        text: '25 years'
       },
       {
-        title: 'Drive',
-        text: 'All-Wheel Drive'
-      },
-      {
-        title: 'Seating',
-        text: '5 Adults'
-      },
-      {
-        title: 'Wheels',
-        text: '19” or 21”'
+        title: 'Roof Pitch',
+        text: '2:12 to 20:12'
       }
     ],
     rightList: [
       {
-        title: 'Weight',
-        text: '4,941 lbs'
+        title: 'Hail Rating',
+        text: 'Class 3 ANSI FM 4473 (up to 1.75" diameter hail)'
       },
       {
-        title: 'Cargo',
-        text: '28 cu ft'
+        title: 'Wind Rating',
+        text: 'Class F ASTM D3161 (up to 130 mph winds)'
       },
       {
-        title: 'Displays',
-        text: 'Driver Display + 17" Touchscreen'
-      },
-      {
-        title: 'Supercharging Max/ Payment Type',
-        text: '200 kW max FreeSupercharging'
-      },
-      {
-        title: 'Onboard Charger Max',
-        text: '11.5 kW max (48A)'
-      },
-      {
-        title: 'Warranty',
-        text: 'Basic Vehicle - 4 years or 50,000 miles,whichever comes first'
+        title: 'Fire Rating',
+        text: 'Class A UL 790 (best fire rating)'
       }
     ]
   };
   const orderProps = {
     /* propiedades de order section */
-    title: 'Model S'
+    title: 'Power Your Home'
   };
 
   return (
     <div>
       <Hero {...heroProps} />
       <Desing {...designProps} />
+      <Cost {...costProps} />
       <Installation {...installationProps} />
       <Experience {...experienceProps} />
-      <Cost {...costProps} />
       <Specs {...specsProps} />
       <Order {...orderProps} />
     </div>

@@ -7,7 +7,7 @@ const OrderSection = ({ title }) => {
   return (
     <div className={classes.container}>
       <div className={classes.wrapper}>
-        <p>Order {title}</p>
+        <p>{title}</p>
         <button>ORDER NOW</button>
       </div>
       <footer>
