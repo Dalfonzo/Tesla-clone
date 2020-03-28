@@ -18,21 +18,21 @@ const HorizontalSpecs = props => {
   return (
     <div className={classes.container} style={changeColor}>
       <div className={classes.left}>
-        <p className={classes.specsTitle}>
+        <div className={classes.specsTitle}>
           {props.speedometerOnFirstCell && props.speedometer && (
             <Speedometer invertColor={changeColor} />
           )}
           {props.leftTitle}
-        </p>
+        </div>
         <p className={classes.specstSubTitle}>{props.leftText}</p>
       </div>
       <div className={classes.mid}>
-        <p className={classes.specsTitle}>
+        <div className={classes.specsTitle}>
           {!props.speedometerOnFirstCell && props.speedometer && (
             <Speedometer invertColor={changeColor} />
           )}
           {props.midTitle}
-        </p>
+        </div>
         <p className={classes.specstSubTitle}>{props.midText}</p>
       </div>
       <div className={classes.right} style={border}>
