@@ -10,17 +10,46 @@ import Exterior from '../../components/models-page-sections/exterior-section/Ext
 import Specs from '../../components/models-page-sections/specs-section/Specs';
 import Order from '../../components/models-page-sections/order-section/Order';
 
+import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
+import { ReactComponent as AutopilotIcon } from '../../assets/svg/autopilot.svg';
+import Icon from '../../components/icon/Icon';
+
 const ModelHoc = ({
   modelProps,
   safetyProps,
   performanceProps,
   rangeProps,
-  autopilotProps,
   interiorProps,
   exteriorProps,
   specsProps,
   orderProps
 }) => {
+  const autopilotProps = {
+    /* propiedades de autopilot section */
+    videoHero: autoPilotVideoHero,
+    horizontalAsideProps: {
+      section: 'Autopilot',
+      title: 'Future of Driving',
+      text:
+        'Autopilot advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.'
+    },
+    verticalSpecsProps: {
+      topTitle: '360°',
+      topText:
+        'Rear, side and forward-facing cameras provide maximum visibility',
+      midTitle: '160 m',
+      midText:
+        'Forward-facing radar provides a long-range view of distant objects',
+      bottomTitle: (
+        <Icon text={'Ultrasonic Sensors'}>
+          <AutopilotIcon />
+        </Icon>
+      ),
+      bottomText:
+        'Detects nearby cars, prevents potential collisions and assists with parking',
+      position: 'left'
+    }
+  };
   return (
     <div>
       {modelProps && <Model {...modelProps} />}

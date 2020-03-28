@@ -1,16 +1,19 @@
 import React from 'react';
 import WithModel from '../../hoc/models-pages-hoc/withModel';
-
+/* HEROS */
 import modelHeroImg from '../../assets/images/model-s/model-s-hero-social.jpg';
 import safetyHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 import performanceHeroImg from '../../assets/images/model-s/model-s-performance.jpg';
 import rangeVideoHero from '../../assets/video/model-s/range.mp4';
-import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroImg from '../../assets/images/model-s/hero@2_1.jpg';
 import exteriorHeroImg from '../../assets/images/model-s/hero-high-viewport.jpg';
 import specsHeroImg from '../../assets/images/model-s/MS-specs-desktop.jpg';
-
 import orderHeroImg from '../../assets/images/model-s/models-2.jpg';
+/* ICONS */
+import { ReactComponent as WifiIcon } from '../../assets/svg/wifi_0.svg';
+import { ReactComponent as RoofCarIcon } from '../../assets/svg/MS_roof.svg';
+import { ReactComponent as SigColors } from '../../assets/svg/signature-colors.svg';
+import Icon from '../../components/icon/Icon';
 
 import classes from './models.module.scss';
 
@@ -98,28 +101,6 @@ const ModelS = () => {
           'Superchargers placed along well-traveled routes around the world'
       }
     },
-    autopilotProps: {
-      /* propiedades de autopilot section */
-      videoHero: autoPilotVideoHero,
-      horizontalAsideProps: {
-        section: 'Autopilot',
-        title: 'Future of Driving',
-        text:
-          'Autopilot advanced safety and convenience features are designed to assist you with the most burdensome parts of driving.'
-      },
-      verticalSpecsProps: {
-        topTitle: '360°',
-        topText:
-          'Rear, side and forward-facing cameras provide maximum visibility',
-        midTitle: '160 m',
-        midText:
-          'Forward-facing radar provides a long-range view of distant objects',
-        bottomTitle: 'Ultrasonic Sensors',
-        bottomText:
-          'Detects nearby cars, prevents potential collisions and assists with parking',
-        position: 'left'
-      }
-    },
     interiorProps: {
       /* propiedades de interior section */
       heroImg: interiorHeroImg,
@@ -129,10 +110,10 @@ const ModelS = () => {
         topTitle: '17inch',
         topText:
           'An expansive touchscreen display designed to improve over time',
-        midTitle: 'Wi-fi',
+        midTitle: <WifiIcon />,
         midText:
           'Over-the-air software updates introduce new features, functionality and performance',
-        bottomTitle: '28 cu ft',
+        bottomTitle: '28cu ft',
         bottomText:
           'Best in class storage, with more cargo room than most SUVs',
         position: 'right'
@@ -152,12 +133,20 @@ const ModelS = () => {
         speedometer: false,
         speedometerOnFirstCell: false,
         button: false,
-        leftTitle: 'Signature Colors',
+        leftTitle: (
+          <Icon text={'Signature Colors'}>
+            <SigColors />
+          </Icon>
+        ),
         leftText: 'Customize Model S with signature, multi-layered paint',
         midTitle: '0.23c',
         midText:
           'The most aerodynamic car in its class with the lowest drag coefficient on earth',
-        rightTitle: 'Roof Rack Compatible',
+        rightTitle: (
+          <Icon text={'Roof Rack Compatible'}>
+            <RoofCarIcon />
+          </Icon>
+        ),
         rightText:
           'A standard, expansive Glass Roof provides more headroom and UV protection',
         borderColor: 'var(--secondary-color)'
