@@ -9,6 +9,11 @@ import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import interiorHeroVideo from '../../assets/video/model-3/Model 3 - interior.mp4';
 import specsHeroImg from '../../assets/images/model-3/top@2.png';
 import orderHeroImg from '../../assets/images/model-3/Desktop_Model3_Order_102719.png';
+/* ICONS */
+import { ReactComponent as WifiIcon } from '../../assets/svg/wifi_0.svg';
+import { ReactComponent as RoofCarIcon } from '../../assets/svg/MS_roof.svg';
+import { ReactComponent as SigColors } from '../../assets/svg/signature-colors.svg';
+import Icon from '../../components/icon/Icon';
 
 const pageProps = {
   modelProps: {
@@ -123,10 +128,18 @@ const pageProps = {
       invertColor: true,
       topTitle: '15inch',
       topText: 'A touchscreen display designed to improve over time',
-      midTitle: 'Wi-fi',
+      midTitle: (
+        <Icon>
+          <WifiIcon />
+        </Icon>
+      ),
       midText:
         'Over-the-air software updates introduce new features, functionality and performance',
-      bottomTitle: 'Roof',
+      bottomTitle: (
+        <Icon>
+          <RoofCarIcon />
+        </Icon>
+      ),
       bottomText:
         'An expansive Glass Roof provides more headroom and UV protection',
       position: 'right'
