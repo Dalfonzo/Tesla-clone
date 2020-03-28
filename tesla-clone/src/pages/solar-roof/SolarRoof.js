@@ -5,6 +5,7 @@ import Installation from '../../components/solar-page-sections/left-aside/LeftAs
 import Experience from '../../components/solar-page-sections/right-aside/RighAsideSection';
 import Cost from '../../components/solar-page-sections/down-aside/DownAsideSection';
 import Specs from '../../components/solar-page-sections/specs-section/SpecsSection';
+import Order from '../../components/solar-page-sections/order-section/OrderSection';
 
 import designHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
 import installationHeroImg from '../../assets/images/model-s/safety-model-s-hero.png';
@@ -110,6 +111,10 @@ const SolarRoof = () => {
       }
     ]
   };
+  const orderProps = {
+    /* propiedades de order section */
+    title: 'Model S'
+  };
 
   return (
     <div>
@@ -118,6 +123,7 @@ const SolarRoof = () => {
       <Experience {...experienceProps} />
       <Cost {...costProps} />
       <Specs {...specsProps} />
+      <Order {...orderProps} />
     </div>
   );
 };
