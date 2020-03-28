@@ -20,7 +20,7 @@ const SolarRoof = () => {
   const heroProps = {
     /* propiedades de model section */
     title: 'Tesla',
-    subtitle: 'Model S',
+    subtitle: 'Solar Roofs',
     heroImg: heroHeroImg,
     specsProps: {
       invertColor: true,

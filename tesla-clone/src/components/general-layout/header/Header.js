@@ -15,10 +15,8 @@ const Header = () => {
         <li>MODEL X</li>
         <li>MODEL Y</li>
         <li>SOLAR ROOF</li>
-        <li>SOLAR PANELS</li>
       </ul>
       <ul className={classes.menu}>
-        <li>SHOP</li>
         <li>SIGN IN</li>
         <li>
           <Icon icon={faBars} />
