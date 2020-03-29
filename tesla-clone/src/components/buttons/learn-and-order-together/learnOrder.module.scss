@@ -1,5 +1,6 @@
 .btnContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-size: var(--normal-font-size);
