@@ -29,17 +29,19 @@ const VerticalSpecs = props => {
 
   return (
     <div className={classes.container} style={style}>
-      <div className={classes.top}>
-        <p className={classes.specsTitle}>{props.topTitle}</p>
-        <p className={classes.specstSubTitle}>{props.topText}</p>
-      </div>
-      <div className={classes.mid}>
-        <p className={classes.specsTitle}>{props.midTitle}</p>
-        <p className={classes.specstSubTitle}>{props.midText}</p>
-      </div>
-      <div className={classes.bottom}>
-        <p className={classes.specsTitle}>{props.bottomTitle}</p>
-        <p className={classes.specstSubTitle}>{props.bottomText}</p>
+      <div className={classes.wrapper}>
+        <div className={classes.top}>
+          <p className={classes.specsTitle}>{props.topTitle}</p>
+          <p className={classes.specstSubTitle}>{props.topText}</p>
+        </div>
+        <div className={classes.mid}>
+          <p className={classes.specsTitle}>{props.midTitle}</p>
+          <p className={classes.specstSubTitle}>{props.midText}</p>
+        </div>
+        <div className={classes.bottom}>
+          <p className={classes.specsTitle}>{props.bottomTitle}</p>
+          <p className={classes.specstSubTitle}>{props.bottomText}</p>
+        </div>
       </div>
     </div>
   );
