@@ -2,6 +2,9 @@
   display: flex;
   font-size: var(--normal-font-size);
   list-style: none;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
 
   & > li {
     text-transform: capitalize;
@@ -10,5 +13,11 @@
     &:hover {
       cursor: pointer;
     }
+  }
+}
+/* querys */
+@media only screen and (max-width: 520px) {
+  .links li {
+    padding: 0.2rem 0.5rem;
   }
 }

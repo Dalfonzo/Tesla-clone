@@ -41,9 +41,14 @@ body {
     font-size: 55%;
   }
 }
-
 @media only screen and (max-width: 640px) {
   html {
     font-size: 50%;
+  }
+}
+@media only screen and (max-width: 590px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --medium-font-size: 2.5rem;
   }
 }
