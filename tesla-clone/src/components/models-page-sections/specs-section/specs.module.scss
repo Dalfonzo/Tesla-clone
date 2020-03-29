@@ -13,6 +13,8 @@
 
     img {
       width: 100%;
+      height: 50%;
+      object-fit: cover;
       position: absolute;
       top: 20%;
       left: 50%;
@@ -21,7 +23,10 @@
   }
   .rightSide {
     flex: 50%;
+    height: 100%;
     align-self: center;
+    display: flex;
+    flex-direction: column;
 
     .buttonsContainer {
       button {
@@ -56,11 +61,15 @@
     }
 
     .listWrapper {
+      align-self: center;
       display: flex;
       font-size: var(--normal-font-size);
+      width: 90%;
+
       ul {
         margin: 1rem;
         list-style: none;
+        flex: 50%;
         width: 30%;
         li {
           line-height: 1.6;
@@ -78,7 +87,25 @@
         }
       }
     }
-    .rightList {
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  ul {
+    flex: 50%;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .buttonsContainer {
+    justify-self: center;
+    align-self: center;
+    button {
+      display: none;
     }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .leftSide {
+    display: none;
   }
 }
