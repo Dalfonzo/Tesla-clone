@@ -33,3 +33,25 @@
     }
   }
 }
+
+@media only screen and (max-width: 1060px) {
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container > :last-child {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container > :not(:last-child) {
+    display: none;
+  }
+}
