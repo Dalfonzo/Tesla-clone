@@ -91,7 +91,7 @@
 }
 
 @media only screen and (max-width: 1080px) {
-  ul {
+  .listWrapper > ul {
     flex: 50%;
   }
 }
@@ -99,6 +99,7 @@
   .buttonsContainer {
     justify-self: center;
     align-self: center;
+
     button {
       display: none;
     }
