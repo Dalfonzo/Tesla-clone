@@ -5,6 +5,7 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  overflow: hidden;
 
   .left {
     flex: 35%;
@@ -29,5 +30,38 @@
     padding: 1rem 0;
     flex: 65%;
     padding: 1rem;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    .left {
+      flex: 55%;
+    }
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .container {
+    padding: 1rem;
+    width: 100%;
+    .left :last-child {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .text {
+    display: none;
+  }
+  .container .left > :last-child {
+    align-self: center;
   }
 }
