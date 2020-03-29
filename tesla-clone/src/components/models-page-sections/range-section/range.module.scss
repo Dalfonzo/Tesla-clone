@@ -13,11 +13,25 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
   }
 
   .aside {
     flex: 25%;
     padding-right: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    height: 150vh;
+  }
+
+  .container .video {
+    order: -1;
   }
 }
