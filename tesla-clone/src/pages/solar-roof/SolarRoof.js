@@ -18,8 +18,6 @@ import specsHeroImg from '../../assets/images/solar-roof/PanelMeasure_desktop2x.
 /* ICONS */
 import { ReactComponent as Solar } from '../../assets/svg/icon.solar_.svg';
 
-import Icon from '../../components/icon/Icon';
-
 const SolarRoof = () => {
   const heroProps = {
     /* propiedades de model section */
