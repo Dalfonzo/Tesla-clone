@@ -94,8 +94,6 @@
   .listWrapper > ul {
     flex: 50%;
   }
-}
-@media only screen and (max-width: 1080px) {
   .buttonsContainer {
     justify-self: center;
     align-self: center;
@@ -105,6 +103,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 900px) {
   .leftSide {
     display: none;
