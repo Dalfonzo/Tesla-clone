@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionsContainer, Section } from 'react-fullpage';
 
+import Header from '../../components/general-layout/header/Header';
 import Model from '../../components/models-page-sections/model-section/Model';
 import Safety from '../../components/models-page-sections/safety-section/Safety';
 import Performance from '../../components/models-page-sections/performance-section/Performance';
@@ -95,6 +96,7 @@ const ModelHoc = ({
 
   return (
     <SectionsContainer {...options}>
+      <Header />
       {modelProps && (
         <Section>
           <Model {...modelProps} />

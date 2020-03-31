@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SectionsContainer, Section } from 'react-fullpage';
 
+import Header from '../../components/general-layout/header/Header';
 import HeroControls from '../../components/home/main-hero-controls/HeroControls';
 import HeroButtons from '../../components/home/hero-buttons/HeroButtons';
 import SecondaryHeroButtons from '../../components/home/secondary-hero-buttons/SecondaryHeroButtons';
@@ -34,6 +35,8 @@ const Home = () => {
 
   return (
     <SectionsContainer {...options}>
+      <Header />
+
       <Section>
         <div className={classes.mainHero}>
           <img src={mainHeroImg} alt="Hero" style={position} />
