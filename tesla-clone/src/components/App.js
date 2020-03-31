@@ -8,6 +8,7 @@ import ModelX from '../pages/model-x/ModelX';
 import ModelY from '../pages/model-y/ModelY';
 import SolarRoof from '../pages/solar-roof/SolarRoof';
 import Menu from './menu/Menu';
+import Login from '../pages/login/Login';
 
 const App = () => {
   return (
@@ -30,6 +31,9 @@ const App = () => {
       </Route>
       <Route exact path="/solarroof">
         <SolarRoof />
+      </Route>
+      <Route exact path="/signin">
+        <Login />
       </Route>
     </div>
   );
