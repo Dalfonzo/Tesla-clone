@@ -14,6 +14,8 @@ import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import { ReactComponent as AutopilotIcon } from '../../assets/svg/autopilot.svg';
 import Icon from '../../components/icon/Icon';
 
+import { SectionsContainer, Section } from 'react-fullpage';
+
 const ModelHoc = ({
   modelProps,
   safetyProps,
@@ -50,17 +52,97 @@ const ModelHoc = ({
       position: 'left'
     }
   };
+
+  let anchors = [];
+
+  if (modelProps) {
+    anchors.push('Model');
+  }
+  if (safetyProps) {
+    anchors.push('Safety');
+  }
+  if (performanceProps) {
+    anchors.push('Performance');
+  }
+  if (rangeProps) {
+    anchors.push('Range');
+  }
+  if (autopilotProps) {
+    anchors.push('Autopilot');
+  }
+  if (interiorProps) {
+    anchors.push('Interior');
+  }
+  if (exteriorProps) {
+    anchors.push('Exterior');
+  }
+  if (specsProps) {
+    anchors.push('Specs');
+  }
+  if (orderProps) {
+    anchors.push('OrderNow');
+  }
+
+  let options = {
+    anchors: anchors, // the anchors for each sections
+    activeClass: 'active-a', // the class that is appended to the sections links
+    arrowNavigation: true, // use arrow keys
+    delay: 1000, // the scroll animation speed
+    navigation: true, // use dots navigatio
+    sectionPaddingTop: '0', // the section top padding
+    sectionPaddingBottom: '0', // the section bottom padding
+    verticalAlign: true // align the content of each section vertical
+  };
+
   return (
     <div>
-      {modelProps && <Model {...modelProps} />}
-      {safetyProps && <Safety {...safetyProps} />}
-      {performanceProps && <Performance {...performanceProps} />}
-      {rangeProps && <Range {...rangeProps} />}
-      {autopilotProps && <Autopilot {...autopilotProps} />}
-      {interiorProps && <Interior {...interiorProps} />}
-      {exteriorProps && <Exterior {...exteriorProps} />}
-      {specsProps && <Specs {...specsProps} />}
-      {orderProps && <Order {...orderProps} />}
+      <SectionsContainer {...options}>
+        {modelProps && (
+          <Section>
+            <Model {...modelProps} />
+          </Section>
+        )}
+        {safetyProps && (
+          <Section>
+            <Safety {...safetyProps} />
+          </Section>
+        )}
+        {performanceProps && (
+          <Section>
+            <Performance {...performanceProps} />
+          </Section>
+        )}
+        {rangeProps && (
+          <Section>
+            <Range {...rangeProps} />
+          </Section>
+        )}
+        {autopilotProps && (
+          <Section>
+            <Autopilot {...autopilotProps} />
+          </Section>
+        )}
+        {interiorProps && (
+          <Section>
+            <Interior {...interiorProps} />
+          </Section>
+        )}
+        {exteriorProps && (
+          <Section>
+            <Exterior {...exteriorProps} />
+          </Section>
+        )}
+        {specsProps && (
+          <Section>
+            <Specs {...specsProps} />
+          </Section>
+        )}
+        {orderProps && (
+          <Section>
+            <Order {...orderProps} />
+          </Section>
+        )}
+      </SectionsContainer>
     </div>
   );
 };
