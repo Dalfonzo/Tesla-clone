@@ -22,7 +22,7 @@ const Home = () => {
 
   const position = { left: `${heroProps.heroPosition}` };
 
-  let options = {
+  const options = {
     anchors: ['main', 'powereverything', 'accesories', 'modely'], // the anchors for each sections
     activeClass: 'active-a', // the class that is appended to the sections links
     arrowNavigation: true, // use arrow keys
@@ -36,7 +36,6 @@ const Home = () => {
   return (
     <SectionsContainer {...options}>
       <Header />
-
       <Section>
         <div className={classes.mainHero}>
           <img src={mainHeroImg} alt="Hero" style={position} />

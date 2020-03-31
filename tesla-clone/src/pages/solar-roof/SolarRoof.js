@@ -1,5 +1,7 @@
 import React from 'react';
+import { SectionsContainer, Section } from 'react-fullpage';
 
+import Header from '../../components/general-layout/header/Header';
 import Hero from '../../components/solar-page-sections/hero-section/HeroSection';
 import Desing from '../../components/solar-page-sections/left-aside/LeftAsideSection';
 import Cost from '../../components/solar-page-sections/down-aside/DownAsideSection';
@@ -118,15 +120,51 @@ const SolarRoof = () => {
     title: 'Power Your Home'
   };
 
+  const options = {
+    anchors: [
+      'main',
+      'design',
+      'cost',
+      'installation',
+      'experience',
+      'specs',
+      'orderNow'
+    ], // the anchors for each sections
+    activeClass: 'active-a', // the class that is appended to the sections links
+    arrowNavigation: true, // use arrow keys
+    delay: 1000, // the scroll animation speed
+    navigation: true, // use dots navigatio
+    sectionPaddingTop: '0', // the section top padding
+    sectionPaddingBottom: '0', // the section bottom padding
+    verticalAlign: true // align the content of each section vertical
+  };
+
   return (
     <div>
-      <Hero {...heroProps} />
-      <Desing {...designProps} />
-      <Cost {...costProps} />
-      <Installation {...installationProps} />
-      <Experience {...experienceProps} />
-      <Specs {...specsProps} />
-      <Order {...orderProps} />
+      <SectionsContainer {...options}>
+        <Header />
+        <Section>
+          <Hero {...heroProps} />
+        </Section>
+        <Section>
+          <Desing {...designProps} />
+        </Section>
+        <Section>
+          <Cost {...costProps} />
+        </Section>
+        <Section>
+          <Installation {...installationProps} />
+        </Section>
+        <Section>
+          <Experience {...experienceProps} />
+        </Section>
+        <Section>
+          <Specs {...specsProps} />
+        </Section>
+        <Section>
+          <Order {...orderProps} />
+        </Section>
+      </SectionsContainer>
     </div>
   );
 };
