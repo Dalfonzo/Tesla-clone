@@ -1,4 +1,5 @@
 import React from 'react';
+import { SectionsContainer, Section } from 'react-fullpage';
 
 import Model from '../../components/models-page-sections/model-section/Model';
 import Safety from '../../components/models-page-sections/safety-section/Safety';
@@ -13,8 +14,6 @@ import Order from '../../components/models-page-sections/order-section/Order';
 import autoPilotVideoHero from '../../assets/video/model-s/autopilot.mp4';
 import { ReactComponent as AutopilotIcon } from '../../assets/svg/autopilot.svg';
 import Icon from '../../components/icon/Icon';
-
-import { SectionsContainer, Section } from 'react-fullpage';
 
 const ModelHoc = ({
   modelProps,
@@ -95,55 +94,53 @@ const ModelHoc = ({
   };
 
   return (
-    <div>
-      <SectionsContainer {...options}>
-        {modelProps && (
-          <Section>
-            <Model {...modelProps} />
-          </Section>
-        )}
-        {safetyProps && (
-          <Section>
-            <Safety {...safetyProps} />
-          </Section>
-        )}
-        {performanceProps && (
-          <Section>
-            <Performance {...performanceProps} />
-          </Section>
-        )}
-        {rangeProps && (
-          <Section>
-            <Range {...rangeProps} />
-          </Section>
-        )}
-        {autopilotProps && (
-          <Section>
-            <Autopilot {...autopilotProps} />
-          </Section>
-        )}
-        {interiorProps && (
-          <Section>
-            <Interior {...interiorProps} />
-          </Section>
-        )}
-        {exteriorProps && (
-          <Section>
-            <Exterior {...exteriorProps} />
-          </Section>
-        )}
-        {specsProps && (
-          <Section>
-            <Specs {...specsProps} />
-          </Section>
-        )}
-        {orderProps && (
-          <Section>
-            <Order {...orderProps} />
-          </Section>
-        )}
-      </SectionsContainer>
-    </div>
+    <SectionsContainer {...options}>
+      {modelProps && (
+        <Section>
+          <Model {...modelProps} />
+        </Section>
+      )}
+      {safetyProps && (
+        <Section>
+          <Safety {...safetyProps} />
+        </Section>
+      )}
+      {performanceProps && (
+        <Section>
+          <Performance {...performanceProps} />
+        </Section>
+      )}
+      {rangeProps && (
+        <Section>
+          <Range {...rangeProps} />
+        </Section>
+      )}
+      {autopilotProps && (
+        <Section>
+          <Autopilot {...autopilotProps} />
+        </Section>
+      )}
+      {interiorProps && (
+        <Section>
+          <Interior {...interiorProps} />
+        </Section>
+      )}
+      {exteriorProps && (
+        <Section>
+          <Exterior {...exteriorProps} />
+        </Section>
+      )}
+      {specsProps && (
+        <Section>
+          <Specs {...specsProps} />
+        </Section>
+      )}
+      {orderProps && (
+        <Section>
+          <Order {...orderProps} />
+        </Section>
+      )}
+    </SectionsContainer>
   );
 };
 
