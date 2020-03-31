@@ -1,26 +1,28 @@
 .container {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: 2rem;
+  top: 0;
+  // transform: translateX(-50%);
+  // bottom: 8rem;
+  z-index: 10000;
 
   .icon {
-    color: var(--primary-color);
-    font-size: 1.6rem;
-    animation: mymove 1.5s infinite;
-    animation-timing-function: cubic-bezier(0.17, 0.83, 1, 0.18);
-    
+    color: var(--secondary-color);
+    font-size: 6rem;
+    // animation: mymove 1.5s infinite;
+    // animation-timing-function: cubic-bezier(0.17, 0.83, 1, 0.18);
+    z-index: 10000;
     &:hover {
       cursor: pointer;
     }
   }
 }
 
-@keyframes mymove {
-  from {
-    margin-bottom: 1rem;
-  }
-  to {
-    margin-bottom: 0;
-  }
-}
+// @keyframes mymove {
+//   from {
+//     margin-bottom: 1rem;
+//   }
+//   to {
+//     margin-bottom: 0;
+//   }
+// }

@@ -67,7 +67,8 @@
 
 /* querys */
 @media only screen and (max-width: 590px) {
-  .links {
+  .links,
+  .menu > * {
     display: none;
   }
 }

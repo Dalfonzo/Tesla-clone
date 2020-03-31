@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Menu from '../../menu/Menu';
 
 import classes from './header.module.scss';
 
@@ -26,9 +27,6 @@ const Header = () => {
       </ul>
       <ul className={classes.menu}>
         <li>SIGN IN</li>
-        <li>
-          <Icon icon={faBars} />
-        </li>
       </ul>
     </div>
   );

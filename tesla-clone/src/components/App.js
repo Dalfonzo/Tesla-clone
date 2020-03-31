@@ -7,10 +7,12 @@ import Model3 from '../pages/model-3/Model3';
 import ModelX from '../pages/model-x/ModelX';
 import ModelY from '../pages/model-y/ModelY';
 import SolarRoof from '../pages/solar-roof/SolarRoof';
+import Menu from './menu/Menu';
 
 const App = () => {
   return (
     <div>
+      <Menu />
       <Route exact path="/">
         <Home />
       </Route>
